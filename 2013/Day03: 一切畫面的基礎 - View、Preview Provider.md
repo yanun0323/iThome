@@ -84,7 +84,9 @@ struct ContentView: View {
 
 另外 `View` 也有一些基本的 function 可以 call，用來幫 `View` 增加一些屬性。
 
-在 `AnotherView()` 後面打上 `.`，Xcode 就會顯示一些基本 `View` 可以用的 function。
+這些 function 我們稱為**修飾器**。
+
+在 `AnotherView()` 後面打上 `.`，Xcode 就會顯示一些基本 `View` 可以用的修飾器。
 
 ![https://ithelp.ithome.com.tw/upload/images/20230918/20162383Rk3mwAylHR.png](https://ithelp.ithome.com.tw/upload/images/20230918/20162383Rk3mwAylHR.png)
 
@@ -98,9 +100,9 @@ AnotherView()
     .border(Color.red, width: 1)                        // 設定邊框
 ```
 
-另外 `View` 的 function 也有一個特性是：
+另外 `View` 的修飾器也有一個特性是：
 
-**function 的使用順序會影響畫面的產生**
+**修飾器的使用順序會影響畫面的產生**
 
 例如這段程式碼：
 ```swift
@@ -114,7 +116,7 @@ AnotherView()
 
 ![https://ithelp.ithome.com.tw/upload/images/20230918/20162383e8p0rpOsXo.png](https://ithelp.ithome.com.tw/upload/images/20230918/20162383e8p0rpOsXo.png)
 
-所以在使用上要特別注意使用 function 的順序！
+所以在使用上要特別注意使用修飾器的順序！
 
 # PreviewProvider
 每個 `View` 程式碼在撰寫的時候，其實是沒有預覽功能的。
@@ -127,13 +129,13 @@ AnotherView()
 
 ```swift
 struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {            /* previews 決定預覽的內容 */
-        ContentView()                           // 這邊預覽 ContentView
+    static var previews: some View {    /* previews 決定預覽的內容 */
+        ContentView()                   // 這邊預覽 ContentView
     }
 }
 ```
 
-當然，這裡的 `ContentView` 也可以使用一些方法來改變即時預覽的設定：
+當然，這裡的 `ContentView` 也可以使用一些修飾器來改變即時預覽的設定：
 ```swift
 ContentView()
     .preferredColorScheme(.dark)                        // 設定深色模式
