@@ -12,6 +12,7 @@
 		A8B1CCA92AB7375300EB45B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8B1CCA82AB7375300EB45B2 /* Assets.xcassets */; };
 		A8B1CCAC2AB7375300EB45B2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8B1CCAB2AB7375300EB45B2 /* Preview Assets.xcassets */; };
 		A8B1CCB32AB821F800EB45B2 /* AnotherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B1CCB22AB821F800EB45B2 /* AnotherView.swift */; };
+		A8C59A2B2ABD402500923A5B /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C59A2A2ABD402500923A5B /* Settings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		A8B1CCA82AB7375300EB45B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A8B1CCAB2AB7375300EB45B2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A8B1CCB22AB821F800EB45B2 /* AnotherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnotherView.swift; sourceTree = "<group>"; };
+		A8C59A2A2ABD402500923A5B /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			children = (
 				A8B1CCA42AB7375200EB45B2 /* iThomeAppApp.swift */,
 				A8B1CCA62AB7375200EB45B2 /* ContentView.swift */,
+				A8C59A2A2ABD402500923A5B /* Settings.swift */,
 				A8B1CCB22AB821F800EB45B2 /* AnotherView.swift */,
 				A8B1CCA82AB7375300EB45B2 /* Assets.xcassets */,
 				A8B1CCAA2AB7375300EB45B2 /* Preview Content */,
@@ -142,6 +145,7 @@
 			files = (
 				A8B1CCB32AB821F800EB45B2 /* AnotherView.swift in Sources */,
 				A8B1CCA72AB7375200EB45B2 /* ContentView.swift in Sources */,
+				A8C59A2B2ABD402500923A5B /* Settings.swift in Sources */,
 				A8B1CCA52AB7375200EB45B2 /* iThomeAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

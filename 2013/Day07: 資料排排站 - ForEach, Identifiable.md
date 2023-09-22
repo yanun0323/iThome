@@ -22,7 +22,7 @@ VStack {
 }
 ```
 
-![Alt text](image.png)
+![https://ithelp.ithome.com.tw/upload/images/20230922/20162383dP9reVDoeD.png](https://ithelp.ithome.com.tw/upload/images/20230922/20162383dP9reVDoeD.png)
 
 > `Text` 可以用 `\()` 來將變數帶入到 `String` 中
 
@@ -42,14 +42,14 @@ VStack {
 
 `struct` 或 `class` 如果實作 `Identifiable`，那他就可以省略 `ForEach` 的 `id`。
 
-例如我們定義一個有 `name` 變數的 `Member` 結構：
+例如我們不想用 String 當作 `champion` 的陣列內容，我們要定義一個新的 `Member` 結構來取代 String：
 ```swift
 struct Member {
     var name: String
 }
 ```
 
-加上 `Identifiable`：
+這邊我們試試加上 `Identifiable`：
 ```swift
 struct Member: Identifiable {
     var name: String
@@ -60,7 +60,7 @@ struct Member: Identifiable {
 
 可以按住 `Option` 點選 `Identifiable` 看他的說明。
 
-![Alt text](image-1.png)
+![https://ithelp.ithome.com.tw/upload/images/20230922/20162383S74uBArNhg.png](https://ithelp.ithome.com.tw/upload/images/20230922/20162383S74uBArNhg.png)
 
 於是我選擇 `UUID` 當作變數的型別：
 ```swift
@@ -91,7 +91,7 @@ VStack {
 }
 ```
 
-![Alt text](image-2.png)
+![https://ithelp.ithome.com.tw/upload/images/20230922/20162383Sd1YudANyx.png](https://ithelp.ithome.com.tw/upload/images/20230922/20162383Sd1YudANyx.png)
 
 # 總結
 ---

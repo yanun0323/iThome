@@ -1,0 +1,1284 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<title>編輯草稿  - iT 邦幫忙::一起幫忙解決難題，拯救 IT 人的一天</title>
+
+<meta name="description" content="iT 邦幫忙是 IT 領域的技術問答與分享社群，透過 IT 人互相幫忙，一起解決每天面臨的靠北時刻。一起來當 IT 人的超級英雄吧，拯救下一個卡關的 IT 人"/>
+<meta name="keywords" content="iT邦幫忙,iThome">
+<meta name="author" content="iThome">
+<meta property="og:site_name" content="iT 邦幫忙::一起幫忙解決難題，拯救 IT 人的一天"/>
+<meta property="og:url" content="https://ithelp.ithome.com.tw/articles/10324878/draft"/>
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="編輯草稿  - iT 邦幫忙::一起幫忙解決難題，拯救 IT 人的一天"/>
+<meta property="og:image" content="https://ithelp.ithome.com.tw/storage/image/fbpic.jpg"/>
+<meta property="og:description" content="iT 邦幫忙是 IT 領域的技術問答與分享社群，透過 IT 人互相幫忙，一起解決每天面臨的靠北時刻。一起來當 IT 人的超級英雄吧，拯救下一個卡關的 IT 人"/>
+<meta property="fb:app_id" content="137875859607921" />
+
+<script type="text/javascript" nonce="2c5d6cfbd1a142adbef4558fe3a" src="//local.adguard.org?ts=1695308737645&amp;type=content-script&amp;dmn=ithelp.ithome.com.tw&amp;url=https%3A%2F%2Fithelp.ithome.com.tw%2Farticles%2F10324878%2Fdraft&amp;app=com.apple.Safari&amp;css=3&amp;js=1&amp;rel=1&amp;rji=1&amp;sbe=1"></script><link rel="apple-touch-icon" sizes="57x57" href="https://ithelp.ithome.com.tw/storage/favicons/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="https://ithelp.ithome.com.tw/storage/favicons/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="https://ithelp.ithome.com.tw/storage/favicons/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="https://ithelp.ithome.com.tw/storage/favicons/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="https://ithelp.ithome.com.tw/storage/favicons/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="https://ithelp.ithome.com.tw/storage/favicons/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="https://ithelp.ithome.com.tw/storage/favicons/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://ithelp.ithome.com.tw/storage/favicons/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://ithelp.ithome.com.tw/storage/favicons/apple-touch-icon-180x180.png">
+<link rel="icon" type="image/png" href="https://ithelp.ithome.com.tw/storage/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://ithelp.ithome.com.tw/storage/favicons/android-chrome-192x192.png" sizes="192x192">
+<link rel="icon" type="image/png" href="https://ithelp.ithome.com.tw/storage/favicons/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="https://ithelp.ithome.com.tw/storage/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="https://ithelp.ithome.com.tw/storage/favicons/manifest.json">
+<link rel="mask-icon" href="https://ithelp.ithome.com.tw/storage/favicons/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-TileImage" content="https://ithelp.ithome.com.tw/storage/favicons/mstile-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+<link rel="stylesheet" href="https://ithelp.ithome.com.tw/css/bootstrap.min.css">
+<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/themes/smoothness/jquery-ui.css"/>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/simplemde/latest/simplemde.min.css">
+<link rel="stylesheet" href="https://ithelp.ithome.com.tw/css/sweetalert.css">
+<link rel="stylesheet" href="https://ithelp.ithome.com.tw/lib/select2/css/select2.min.css">
+<link rel="stylesheet" href="https://ithelp.ithome.com.tw/css/google.css">
+<link rel="stylesheet" href="https://ithelp.ithome.com.tw/css/style.css?202008271142">
+<!-- highlight -->
+<link rel="stylesheet" href="https://ithelp.ithome.com.tw/css/railscasts.css">
+<!-- end -->
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+<!--messenger css-->
+
+
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-6182VBHV8Y');
+</script>
+    </head>
+
+<body>
+    <div class="header">
+    <div class="a970" align="center">
+        
+    </div>
+    <div class="header__inner clearfix">
+        <h1 class="header__logo pull-left"><a href="/"><img src="https://ithelp.ithome.com.tw/storage/image/logo.svg" alt="iT邦幫忙" class="img-responsive"></a></h1>
+        <div class="header__promote">
+            <div class="a12word pull-right">
+                <div class="a12word__box">
+                    
+                </div>
+                <div class="a12word__box">
+                    
+                </div>
+                <div class="a12word__box">
+                    
+                </div>
+            </div>
+
+            <div class="a970 pull-right">
+                
+            </div>
+        </div>
+    </div>
+
+    <nav class="menu">
+        <div class="menu__bg">
+            <div class="menu__container clearfix">
+                
+                <h1 class="menu__logo">
+                    <a href="/" class="menu__logo-link"><img src="https://ithelp.ithome.com.tw/storage/image/nav_logo.svg"  alt="iT邦幫忙"></a>
+                </h1>
+
+                                                                                                                
+                
+                <ul class="list-unstyled menu__left">
+                    <li class="menu__item">
+                        <a href="https://ithelp.ithome.com.tw/questions" class="menu__item-link  menu__item-link--pl">技術問答</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="https://ithelp.ithome.com.tw/articles?tab=tech" class="menu__item-link  menu__item-link--active ">技術文章</a>
+                    </li>
+                    
+                    <li class="menu__item">
+                        <a href="https://ithelp.ithome.com.tw/articles?tab=job" class="menu__item-link  hidden-xs" >iT 徵才</a>
+                    </li>
+                    
+                    <li class="menu__item">
+                        <a href="https://ithelp.ithome.com.tw/tags" class="menu__item-link  hidden-xs" >Tag</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="https://ithelp.ithome.com.tw/talks" class="menu__item-link  hidden-xs" >聊天室</a>
+                    </li>
+                    <li class="menu__item menu__item--ironman">
+                        <a href="/2023ironman/event" target="_blank" class="menu__item-link hidden-xs" >2023 鐵人賽</a>
+                    </li>
+                </ul>
+                
+
+                                    
+                                        <ul class="list-unstyled menu__right">
+                        <li class="menu__item">
+                            <div id="searchDropdown" class="menu__search-btn">
+                                <span class="menu__search-toggle"></span>
+                            </div>
+                        </li>
+
+                        
+
+                                                                                                            <li class="menu__item menu__ironman--hidden">
+                                    <button type="button" class="menu__ironman-btn"  data-toggle="modal" data-target="#ir-select-series__common">鐵人發文</button>
+                                </li>
+                                                    
+                        
+
+                        <li class="menu__item show-ask">
+                            <a href="https://ithelp.ithome.com.tw/questions/create" class="menu__item-right-link" >發問</a>
+                        </li>
+                        <li class="menu__item show-ask dropdown">
+                            <button class="menu__item-right-link" id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                               發文 <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu menu__dropdown-menu" aria-labelledby="dLabel">
+                                                                <li><a href="https://ithelp.ithome.com.tw/articles/create?group=tech">技術</a></li>
+                                                                <li><a href="https://ithelp.ithome.com.tw/articles/create?group=job">徵才</a></li>
+                                                            </ul>
+                        </li>
+                        <li class="menu__item show-notice">
+                            <a href="/messages" class="notification menu__item-right-link menu__item-right-link--narrow menu__tooltip menu__tooltip--msg  menu__item-right-link--zero " >
+                                <i class="fa fa-commenting fa-fw"></i>
+                                    <span id="message_count" ></span>
+                            </a>
+                        </li>
+                        <li class="menu__item show-notice">
+                            <a href="/notifications" class="notification menu__item-right-link menu__item-right-link--narrow menu__tooltip menu__tooltip--notice  menu__item-right-link--zero ">
+                                <i class="fa fa-bell fa-fw"></i>
+                                    <span id="notification_count" ></span>
+                            </a>
+                        </li>
+                        <li class="menu__item menu__item--ml dropdown">
+                            <a id="dLabel" class="menu__item-link menu__item-link--padding clearfix" data-target="#" href="" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                <span class="notification menu__avatar">
+                                    <img src="https://member.ithome.com.tw/avatars/187519?s=ithelp" class="img-circle menu__avatar-img"/>
+
+                                        <span id="notification_count" >  </span>
+                                </span>
+                                <span class="menu__account">Yanun</span>
+                                <span class="caret menu__caret"></span>
+                            </a>
+                            <ul class="dropdown-menu menu__profile-dropdown" aria-labelledby="dLabel">
+                                <li class="show-list-ask"><a href="https://ithelp.ithome.com.tw/questions/create">發問</a></li>
+                                <li class="show-list-ask">
+                                    <a class="menu__profile-dropdown-post">發文 <i class="fa fa-angle-down fa-fw" aria-hidden="true"></i></a>
+                                    <ul class="list-unstyled menu__profile-dropdown-ul">
+                                                                                    <li><a href="https://ithelp.ithome.com.tw/articles/create?group=tech">技術</a></li>
+                                                                                    <li><a href="https://ithelp.ithome.com.tw/articles/create?group=job">徵才</a></li>
+                                                                            </ul>
+                                </li>
+                                <li class="show-list-notice">
+                                    <a href="/messages" class="notification">
+                                        站內簡訊
+                                                                            </a>
+                                </li>
+                                <li class="show-list-notice">
+                                    <a href="/notifications" class="notification">
+                                        即時通知
+                                                                            </a>
+                                </li>
+                                <li>
+                                    <a href="/users/20162383" id="account" data-account="yanun0323">我的主頁</a>
+                                </li>
+                                <li>
+                                    <a href="/users/20162383/questions">我的發問</a>
+                                </li>
+                                <li>
+                                    <a href="/users/20162383/answers">我的回答</a>
+                                </li>
+                                <li>
+                                    <a href="/users/20162383/articles">我的發文</a>
+                                </li>
+                                <li>
+                                    <a href="/users/20162383/traces/questions">追蹤的問答</a>
+                                </li>
+                                <li>
+                                    <a href="/users/20162383/traces/articles">追蹤的文章</a>
+                                </li>
+                                <li>
+                                    <a href="/users/20162383/traces/tags">追蹤的tag</a>
+                                </li>
+                                <li>
+                                    <a href="/users/20162383/traces/users">追蹤的邦友</a>
+                                </li>
+                                <li>
+                                    <a href="/users/20162383/invited">邀請我回答</a>
+                                </li>
+                                <li>
+                                    <a href="https://ithelp.ithome.com.tw/users/setting">設定</a>
+                                </li>
+                                <li>
+                                    <a href="https://ithelp.ithome.com.tw/search?tab=user">找邦友</a>
+                                </li>
+                                <li>
+                                    <a href="/users/logout">登出</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                            </div>
+        </div>
+
+        
+        <div class="menu__dropform">
+            <div class="menu__container">
+                <form method="GET" action="https://ithelp.ithome.com.tw/search" accept-charset="UTF-8" role="search" class="clearfix">
+                    <div class="pull-left">
+                        <input name="search" type="text" class="menu__search-input" placeholder="搜尋主題、問題或人">
+
+                        <input type="radio" class="radio-input" name="tab" value="question" id="searchQA" checked/>
+                        <label for="searchQA" class="radio-label">問答</label>
+
+                        <input type="radio" class="radio-input" name="tab" value="article" id="searchArticle"/>
+                        <label for="searchArticle" class="radio-label">文章</label>
+
+                        <input type="radio" class="radio-input" name="tab" value="tag" id="searchTag"/>
+                        <label for="searchTag" class="radio-label">Tag</label>
+
+                        <input type="radio" class="radio-input" name="tab" value="user" id="searchID"/>
+                        <label for="searchID" class="radio-label">邦友</label>
+
+                        <input type="radio" class="radio-input" name="tab" value="ironman" id="searchIronman"/>
+                        <label for="searchIronman" class="radio-label">鐵人賽</label>
+                    </div>
+                    <button type="submit" class="btn menu__dropform-btn">搜尋</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="menu__mask"></div>
+</div>
+
+
+                        <div class="modal fade" id="ir-select-series__common" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content ir-modal-content normal-modal">
+            <div class="modal-header ir-modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title text-center">請選擇主題</h4>
+            </div>
+            <div class="modal-body">
+                <ul class="list-unstyled">
+                                                            <li class="ir-modal__list">
+                        <a href="https://ithelp.ithome.com.tw/2023ironman/create/6316" class="ir-modal__list-link">
+                            <div class="group__badge group__badge--self">
+                                自我挑戰組
+                            </div>
+                            <div class="">[我報錯主題了]</div>
+                                                    </a>
+                    </li>
+                                        <li class="ir-modal__list">
+                        <a href="https://ithelp.ithome.com.tw/2023ironman/create/6318" class="ir-modal__list-link">
+                            <div class="group__badge group__badge--software-dev">
+                                Software Development
+                            </div>
+                            <div class="">Golang 工程師的 SwiftUI 之旅</div>
+                                                        <div class="ir-modal__team"><span class="team-badge">團隊</span>SwiftUI 男孩 | 開賽日 2023-09-16</div>
+                                                    </a>
+                    </li>
+                                    </ul>
+            </div>
+            <div class="modal-footer ir-modal-footer">
+                <button type="button" class="btn ir-modal__btn" data-dismiss="modal">關閉</button>
+            </div>
+        </div>
+    </div>
+</div>                
+    
+    
+    	<div class="container index-top">
+	    <div class="row">
+	        <div class="col-md-12 clearfix">
+    			        
+        <div class="leftside leftside--article">
+
+        <div class="post" style="opacity: 0;">
+                            <form method="POST" action="https://ithelp.ithome.com.tw/articles/10324878" accept-charset="UTF-8" id="deleteForm"><input name="_token" type="hidden" value="f1EAkMLgDu47VhcRbvVIXY3oO7dAeovRHdKh3oA9">
+                
+                <input name="_method" type="hidden" value="DELETE">
+                </form>
+            
+
+
+
+
+            <div class="ir-post-days  ir-post-days--challenge  clearfix">
+                <img src="https://ithelp.ithome.com.tw/storage/image/ironman15thsidebar.png" alt="" class="ir-post-days__9thimg">
+
+                <div class="ir-post-days__word">
+                                                                        今天挑戰第 <span
+                                    class="ir-post-days__day">7</span>
+                            天，加油！
+                                                            </div>
+            </div>
+
+            <form method="POST" action="https://ithelp.ithome.com.tw/articles/10324878/draft" accept-charset="UTF-8" id="ironmanEditForm"><input name="_token" type="hidden" value="f1EAkMLgDu47VhcRbvVIXY3oO7dAeovRHdKh3oA9">
+            <div class="board ir-board">
+                <div class="ir-post-group ir-post-group--software-dev">
+                    
+                    <div class="ir-post-group__title ir-post-group__title--software-dev">
+
+                        
+
+                        Software Development
+                    </div>
+                    <div class="ir-post-group__content">
+                        <div class="ir-post-group__topic">
+                            Golang 工程師的 SwiftUI 之旅
+                        </div>
+                        
+                                                    <div class="ir-post-group__team">
+                                <span class="team-badge">團隊</span><a class="ir-team" href="https://ithelp.ithome.com.tw/2023ironman/signup/team/288">SwiftUI 男孩</a> |
+                                開賽日：2023-09-16
+                            </div>
+                                            </div>
+                </div>
+
+                <div class="post-header">
+                    <input name="_method" type="hidden" value="PUT">
+                    <div class="form-group ir-post-header ">
+                        <input class="form-control post-header__title" placeholder="在這裡幫文章下個好標題..." name="subject" type="text" value="">
+                        
+                    </div>
+                </div>
+
+
+                <div class="post-markdown">
+                    <textarea id="SimpleMDE" class="form-control" name="description" rows="5" placeholder="在這裡開始寫文章囉..."></textarea>
+
+      
+     <style>
+            .sticky {
+                position: fixed;
+                top: 50px;
+                width: 100%;
+                z-index: 9;
+            }        
+        </style>
+    <script type="text/template" id="BearManEmoticonList">
+        <div style="height: 175px; overflow-x: scroll;">
+                                                <img class="emoticon" src="/images/emoticon/emoticon01.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon02.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon03.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon04.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon05.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon06.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon07.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon08.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon09.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon10.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon11.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon12.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon13.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon14.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon15.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon16.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon17.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon18.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon19.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon20.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon21.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon22.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon23.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon24.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon25.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon26.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon27.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon28.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon29.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon30.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon31.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon32.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon33.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon34.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon35.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon36.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon37.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon38.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon39.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon40.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon41.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon42.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon43.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon44.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon45.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon46.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon47.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon48.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon49.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon50.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon51.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon52.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon53.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon54.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon55.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon56.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon57.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon58.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon59.gif"/>
+                                                                                            <img class="emoticon" src="/images/emoticon/emoticon61.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon62.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon63.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon64.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon65.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon66.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon67.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon68.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon69.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon70.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon71.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon72.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon73.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon74.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon75.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon76.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon77.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon78.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon79.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon80.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon81.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon82.gif"/>
+                                    </div>
+    </script>
+    
+        
+    <script type="text/template" id="UploadImageTemplate">
+        <div>
+        <style>
+            .fileUpload {
+                position: relative;
+                overflow: hidden;
+                margin: 10px;
+            }
+            .fileUpload input.upload {
+                position: absolute;
+                top: 0;
+                right: 0;
+                margin: 0;
+                padding: 0;
+                font-size: 20px;
+                cursor: pointer;
+                opacity: 0;
+                filter: alpha(opacity=0);
+                display: block;
+            }
+            #uploadThumbnail {
+                height: 150px;
+                overflow-x: scroll;
+            }
+            #uploadThumbnail .uploadImage {
+                max-width: 100%;
+            }
+            #uploadImageBox {
+                min-height: 150px;
+                vertical-align: middle;
+                border: 2px dashed #ddd;
+            }
+            .active {
+                border: 1px dashed black;
+            }
+        </style>
+        <div id="uploadImageBox">
+            可直接拖放圖片至此，或點擊上傳圖片按鈕：
+        </div>
+        <hr/>
+        <div id="fileUpload" class="fileUpload btn btn-primary">
+            <span id="uploadText">上傳圖片</span>
+            <input id="uploadButton" type="file" class="upload" name="images[]"/>
+        </div>
+        <div id="InsertImg" class="btn btn-primary hidden">插入圖片</div>
+        <br>
+        <span>上傳檔案大小請勿超過 5MB</span>
+    </script>
+    
+
+    
+
+
+
+ 
+    
+                    </div>
+
+            </div>
+
+            <div class="post-counter"></div>
+            <div class="post-errors">
+                
+            </div>
+
+            <div class="board ir-post-board--tags">
+                <div class="ir-post-tags clearfix ">
+                    <div class="ir-post-tags__title"><i class="fa fa-tag fa-fw"></i>Tag</div>
+                    <div class="ir-post-tags__select">
+                        <select id="tags" name="tags[]" class="form-control" multiple="multiple">
+                                                                                                <option value="15th鐵人賽" selected="selected">15th鐵人賽</option>
+                                                                                    </select>
+                    </div>
+                </div>
+
+                                    <div class="ir-post-btn">
+                        <div class="btn-group save-group">
+                            <input class="btn btn-draft save-group__btn" type="submit" value="儲存草稿">
+                            <button type="button" class="btn btn-draft dropdown-toggle save-group__dropdown-toggle"
+                                    data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu--up save-group__dropdown">
+                                                                <li><input class="btn save-group__dropdown-btn save-group__dropdown-btn--publish" formaction="https://ithelp.ithome.com.tw/articles/10324878/publish" type="submit" value="發表文章">
+                                </li>
+                                                                <li>
+                                    <input type="submit"
+                                           class="btn save-group__dropdown-btn save-group__dropdown-btn---delete"
+                                           value="刪除草稿" form="deleteForm"/>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                            </div>
+            
+            
+            
+            </form>
+
+            <div id="sys_time_style" class="ir-post-time text-right">系統標準時間
+                <span id="sys_time">loading...</span>
+                <i id="sys_time_reload" class="fa fa-fw fa-refresh" aria-hidden="true"></i>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="rightside rightside--ironman">
+        <div class="ir-post-bear-9th post" style="opacity: 0;">
+            <img src="https://ithelp.ithome.com.tw/storage/image/ironman15th_side.png" alt="" class="ir-post-bear-9th__img" >
+        </div>
+
+        <div class="mk-instruction mk-instruction--article">
+    <div class="mk-instruction__btn mk-instruction__btn--article">
+        <i class="fa fa-caret-up fa--spacing" aria-hidden="true"></i>Markdown<span>常<br>用<br>語<br>法</span>
+    </div>
+    <div class="mk-instruction__content mk-instruction__content--article">
+        <p class="mk-text-muted">本站編輯器採Markdown語法，請勿使用HTML Code，以避免內容濾掉無法呈現</p>
+        <div class="mk-instruction__content-title">Markdown常用語法</div>
+        <ul class="list-unstyled">
+            <li class="spacing">```
+                <br>程式碼區塊
+                <br>```</li>
+            <li>*斜體*</li>
+            <li>**粗體**</li>
+            <li>&gt; 引用</li>
+            <li>---分隔線</li>
+            <li class="spacing">- 列點1
+                <br>- 列點2
+                <br>- 列點3
+            </li>
+            <li># H1標題</li>
+            <li>## H2標題</li>
+            <li>### H3標題</li>
+        </ul>
+        <a href="https://ithelp.ithome.com.tw/markdown" class="mk-instruction__content-link" target="_blank"><i class="fa fa-chevron-circle-right fa-fw " aria-hidden="true"></i>詳細說明</a>
+    </div>
+</div>
+    </div>
+	        </div>
+	    </div>
+	</div>
+
+        <footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="a970">
+                    
+                </div>
+                <ul class="list-inline footer__menu">
+                    <li class="footer__item">電週文化事業版權所有、轉載必究 | Copyright © <a href="https://www.ithome.com.tw/" target="_blank" class="footer__link">iThome</a></li>
+                    <li><a href="https://www.ithome.com.tw/aboutus/" target="_blank" class="footer__link">刊登廣告</a></li>
+                    <li><a href="https://www.ithome.com.tw/aboutus/" target="_blank" class="footer__link">授權服務</a></li>
+                    <li><a href="mailto:ithelp@mail.ithome.com.tw" class="footer__link">服務信箱</a></li>
+                    <li><a href="https://www.ithome.com.tw/terms" target="_blank" class="footer__link">隱私權聲明與會員使用條款</a></li>
+                    <li><a href="https://ithelp.ithome.com.tw/guide" class="footer__link">iT邦幫忙使用說明</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+<script src="https://ithelp.ithome.com.tw/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/messenger/1.4.2/js/messenger.min.js"></script>
+<script>
+    Messenger.options = {
+        extraClasses: 'messenger-fixed messenger-on-bottom messenger-on-left',
+        theme: 'block'
+    };
+
+    function getCookie(name) {
+        var arr, reg = new RegExp("(^| )" + name + "=([^;]*)(;|$)");
+
+        if (arr = document.cookie.match(reg))
+            return unescape(arr[2]);
+        else
+            return null;
+    }
+    
+    window.Notification.TOKEN = getCookie("_token");
+</script>
+<script>
+    $(function(){
+        $.ajaxPrefilter(function(options, originalOptions, jqXHR){
+            if (options.type.toLowerCase() !== "get" && !options.beforeSend) {
+                options.beforeSend = function(xhr) {
+                        xhr.setRequestHeader('X-CSRF-TOKEN', 'f1EAkMLgDu47VhcRbvVIXY3oO7dAeovRHdKh3oA9');
+                    }
+            }
+        });
+    });
+</script>
+<script src="https://ithelp.ithome.com.tw/js/lib/vue.min.js"></script>
+<script src="https://ithelp.ithome.com.tw/js/lib/sweetalert.min.js"></script>
+<script src="https://ithelp.ithome.com.tw/js/event.js?20180530"></script>
+<script src="https://ithelp.ithome.com.tw/lib/select2/js/select2.full.min.js"></script>
+
+<script src="https://ithelp.ithome.com.tw/js/ImgPreview.js"></script>
+<!-- highlight -->
+<script src="https://ithelp.ithome.com.tw/js/highlight.pack.js"></script>
+<script>
+    $(function(){
+        $('pre code').each(function(i, block) {
+            $(block).attr('class');
+            hljs.highlightBlock(block);
+        });
+    })
+</script>
+
+    <div class="modal fade" id="AtUser" tabindex="-1">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title text-center">標記使用者</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="invite_person" class="control-label">輸入對方的帳號或暱稱</label>
+                        <input type="text" class="form-control modal-input" id="invite_person" v-model="result_text" debounce="500">
+                        <div id="editor_tagged_ids"></div>
+                    </div>
+                    <ul class="list-unstyled invitation">
+                        <li style="text-align: center">
+                            <template v-if="!!result_text && !result_list.length && is_loading">
+                                Loading
+                            </template>
+                            <template v-if="!!result_text && !result_list.length && !is_loading">
+                                找不到結果。
+                            </template>
+                        </li>
+                        <li class="invitation-list" v-for="result in result_list">
+                            <img v-if="result && result.center_id" :src="'https://member.ithome.com.tw/avatars/' + result.center_id + '?s=ithelp'" style="float: left; margin-left: 10px; width: 48px; height: 48px;">
+                            <div class="invitation-list__content clearfix">
+                                <a class="btn btn-main invitation-list__btn" @click="AtUserByID(result.label, result.id)">標記</a>
+                                <div><a href="#" class="invitation-list__name">{{ result.label }}</a></div>
+                                <div><a href="#" class="invitation-list__account">{{ result.account }}</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <a type="button" class="btn btn-main" data-dismiss="modal">關閉</a>
+                </div>
+            </div>
+        </div>
+    </div>
+            <script src="https://ithelp.ithome.com.tw/js/simplemde.min.js"></script>
+        <script src="https://ithelp.ithome.com.tw/js/lib/jQuery-File-Upload/js/jquery.iframe-transport.js"></script>
+        <script src="https://ithelp.ithome.com.tw/js/lib/jQuery-File-Upload/js/jquery.fileupload.js"></script>
+    
+        <script>
+    /* github.com/NextStepWebs/simplemde-markdown-editor/blob/master/src/js/simplemde.js */
+    var Toolbar_Base = {
+        "bold": {
+            name: "bold",
+            action: SimpleMDE.toggleBold,
+            className: "fa fa-bold",
+            title: "粗體"
+        },
+        "italic": {
+            name: "italic",
+            action: SimpleMDE.toggleItalic,
+            className: "fa fa-italic",
+            title: "斜體"
+        },
+        "strikethrough": {
+            name: "strikethrough",
+            action: SimpleMDE.toggleStrikethrough,
+            className: "fa fa-strikethrough",
+            title: "Strikethrough"
+        },
+        "heading": {
+            name: "heading",
+            action: SimpleMDE.toggleHeadingSmaller,
+            className: "fa fa-header",
+            title: "Heading"
+        },
+        "heading-smaller": {
+            name: "heading-smaller",
+            action: SimpleMDE.toggleHeadingSmaller,
+            className: "fa fa-header fa-header-x fa-header-smaller",
+            title: "Smaller Heading"
+        },
+        "heading-bigger": {
+            name: "heading-bigger",
+            action: SimpleMDE.toggleHeadingBigger,
+            className: "fa fa-header fa-header-x fa-header-bigger",
+            title: "Bigger Heading"
+        },
+        "heading-1": {
+            name: "heading-1",
+            action: SimpleMDE.toggleHeading1,
+            className: "fa fa-header fa-header-x fa-header-1",
+            title: "H1"
+        },
+        "heading-2": {
+            name: "heading-2",
+            action: SimpleMDE.toggleHeading2,
+            className: "fa fa-header fa-header-x fa-header-2",
+            title: "H2"
+        },
+        "heading-3": {
+            name: "heading-3",
+            action: SimpleMDE.toggleHeading3,
+            className: "fa fa-header fa-header-x fa-header-3",
+            title: "H3"
+        },
+        "separator-1": {
+            name: "separator-1"
+        },
+        "code": {
+            name: "code",
+            action: SimpleMDE.toggleCodeBlock,
+            className: "fa fa-code",
+            title: "新增程式碼"
+        },
+        "quote": {
+            name: "quote",
+            action: SimpleMDE.toggleBlockquote,
+            className: "fa fa-quote-left",
+            title: "引用"
+        },
+        "unordered-list": {
+            name: "unordered-list",
+            action: SimpleMDE.toggleUnorderedList,
+            className: "fa fa-list-ul",
+            title: "項目符號清單"
+        },
+        "ordered-list": {
+            name: "ordered-list",
+            action: SimpleMDE.toggleOrderedList,
+            className: "fa fa-list-ol",
+            title: "編號清單"
+        },
+        "clean-block": {
+            name: "clean-block",
+            action: SimpleMDE.cleanBlock,
+            className: "fa fa-eraser fa-clean-block",
+            title: "Clean block"
+        },
+        "separator-2": {
+            name: "separator-2"
+        },
+        "link": {
+            name: "link",
+            action: SimpleMDE.drawLink,
+            className: "fa fa-link",
+            title: "插入連結"
+        },
+        "image": {
+            name: "image",
+            action: SimpleMDE.drawImage,
+            className: "fa fa-picture-o",
+            title: "插入圖片"
+        },
+        "table": {
+            name: "table",
+            action: SimpleMDE.drawTable,
+            className: "fa fa-table",
+            title: "插入表格"
+        },
+        "horizontal-rule": {
+            name: "horizontal-rule",
+            action: SimpleMDE.drawHorizontalRule,
+            className: "fa fa-minus",
+            title: "插入水平線"
+        },
+        "separator-3": {
+            name: "separator-3"
+        },
+        "preview": {
+            name: "preview",
+            action: SimpleMDE.togglePreview,
+            className: "mk__editor-pre no-disable",
+            title: "預覽"
+        },
+        "side-by-side": {
+            name: "side-by-side",
+            action: SimpleMDE.toggleSideBySide,
+            className: "fa fa-columns no-disable no-mobile",
+            title: "Toggle Side by Side"
+        },
+        "fullscreen": {
+            name: "fullscreen",
+            action: SimpleMDE.toggleFullScreen,
+            className: "fa fa-arrows-alt no-disable no-mobile",
+            title: "Toggle Fullscreen"
+        },
+        "separator-4": {
+            name: "separator-4"
+        },
+        "guide": {
+            name: "guide",
+            action: "https://simplemde.com/markdown-guide",
+            className: "fa fa-question-circle",
+            title: "Markdown Guide"
+        },
+        "separator-5": {
+            name: "separator-5"
+        },
+        "undo": {
+            name: "undo",
+            action: SimpleMDE.undo,
+            className: "fa fa-undo no-disable",
+            title: "復原"
+        },
+        "redo": {
+            name: "redo",
+            action: SimpleMDE.redo,
+            className: "fa fa-repeat no-disable",
+            title: "取消復原"
+        }
+    }
+
+    var Toolbar_YouTube = {
+        name: "YouTube",
+        title: "加入 YouTube 連結",
+        className: "fa fa-youtube",
+        action: function(editor) {
+            var cm = editor.codemirror;
+            swal({
+                title: "嵌入 YouTube 影片",
+                text: "請輸入 YouTube 連結即可嵌入影片",
+                content: "input",
+                animation: "slide-from-top",
+                inputPlaceholder: "https://www.youtube.com/watch?v=jl5oj2VLEws"
+            }).then(function (inputValue) {
+                if (inputValue === false) return false;
+                if (inputValue === "") {
+                    // swal.showInputError("You need to write something!");
+                }
+                var youtubeID = youtube_parser(inputValue);
+                cm.replaceSelection('[![Yes](https://img.youtube.com/vi/' + youtubeID + '/0.jpg)](https://www.youtube.com/watch?v=' + youtubeID + ')');
+                swal.close();
+            });
+        }
+    };
+
+    var Toolbar_BearMan = {
+        name: "BearMan",
+        title: "熊俠貼圖",
+        className: "fa fa-smile-o",
+        action: function(editor) {
+            var $BearManEmoticonList = $('#BearManEmoticonList');
+            $BearManEmoticonList.data('simplemde', editor);
+            swal({
+                title: "熊俠貼圖",
+                content: $.parseHTML('<div>' + $BearManEmoticonList.html() + '</div>')[0],
+                animation: "slide-from-top",
+            });
+        }
+    };
+
+    var Toolbar_UploadImage = {
+        name: "UploadImage",
+        title: "上傳圖片",
+        className: "fa fa-upload",
+        action: function(editor) {
+            swal({
+                title: "上傳圖片",
+                content: $.parseHTML('<div>' + $('#UploadImageTemplate').html() + '</div>')[0],
+                animation: "slide-from-top",
+                timer: 0,
+                button: "取消",
+            });
+
+            // fileupload
+            let dropzone = $('#uploadImageBox');
+
+            function displayImageThumbnail(o) {
+                const img = document.createElement('img');
+                img.setAttribute("id", "uploadThumbnail");
+                img.src = o.result.url;
+                dropzone.text('');
+                if(!!img) {
+                    dropzone[0].append(img);
+                }
+            }
+
+            $('#uploadButton').fileupload({
+                add: function(e, data) {
+                    var uploadErrors = [];
+                    if(data.originalFiles[0].size > (5*1024*1024)) {//5 MB
+                        uploadErrors.push('檔案大小超過限制');
+                    }
+                    if(uploadErrors.length > 0) {
+                        dropzone.text('')
+                        $('<p style="color: red;">上傳失敗: ' + uploadErrors + '<i class="elusive-remove" style="padding-left:10px;"/></p>')
+                        .appendTo('#uploadImageBox');
+                    } else {                        
+                        data.submit();
+                    }
+                },
+                url: 'https://ithelp.ithome.com.tw/api/upload',
+                dataType: 'json',                
+                start: function (e, data) {
+                    $('#uploadText').text('上傳中(0%)');
+                    $('#uploadButton').prop('disabled', true);
+                },                
+                progressall: function (e, data) {
+                    var progress = parseInt(data.loaded / data.total * 100, 10);
+                    $('#uploadText').text('上傳中('+progress+'%)');
+                },
+                done: function (e, data) {
+                    displayImageThumbnail(data)
+                    $('#fileUpload').remove();
+                    $('#InsertImg').removeClass('hidden');
+                }
+            });
+
+            // drag and drop image upload            
+            dropzone[0].addEventListener('dragenter', event => {
+                event.preventDefault();
+                dropzone.addClass('active');
+            });
+            dropzone[0].addEventListener('dragleave', event => {
+                event.preventDefault();
+                dropzone.removeClass('active');
+            });
+            dropzone[0].addEventListener('dragover', event => {
+                event.preventDefault();
+            });
+            dropzone[0].addEventListener('drop', event => {
+                event.preventDefault();
+                dropzone.removeClass('active');
+
+                const file = event.dataTransfer.files[0];
+
+                const fileSize = file.size / 1024 / 1024; // in MB
+                if (fileSize > 5) {
+                    return false
+                } else {
+                    const reader = new FileReader();
+                    reader.readAsDataURL(file);
+                    reader.addEventListener('loadend', () => {
+                        displayImageThumbnail(reader)
+                    });
+                }                             
+            });
+
+            // select image
+            $('#InsertImg').click(function(){
+                var imgLink = $('#uploadThumbnail').attr('src');
+                var imgMK = '![' + imgLink + ']('+ imgLink +')';
+                editor.codemirror.replaceSelection(imgMK);
+                swal.close();
+            });
+        }
+    }
+
+    var Toolbar_HELP = {
+        name: "help",
+        title: "Markdown 說明",
+        className: "mk__editor-guide",
+        action: function(editor) {
+            window.open('/markdown');
+        }
+    }
+
+    var Toolbar_AtUser = {
+        name: "AtUser",
+        title: "標記使用者",
+        className: "fa fa-user",
+        action: function(editor) {
+            var $AtUser = $('#AtUser');
+            $AtUser.data('simplemde', editor);
+            $('#AtUser').modal('show');
+        }
+    }
+
+    var Toolbar_Formula = {
+        name: "Formula",
+        title: "加入數學公式",
+        className: "fa fa-pie-chart",
+        action: function(editor) {
+            var cm = editor.codemirror;
+            swal({
+                title: "加入數學公式",
+                text: "輸入 LaTeX 語法產生數學公式",
+                content: "input",
+                animation: "slide-from-top",
+                inputPlaceholder: "https://chart.googleapis.com/chart?cht=tx&chl=x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}"
+            }).then(function (inputValue) {
+                if (!!inputValue === false) {
+                     return false;
+                }
+                var link = 'https://chart.googleapis.com/chart?cht=tx&chl=' + encodeURIComponent(inputValue);
+                var mk_text = '![' + link  + '](' + link  + ')';
+                cm.replaceSelection(mk_text);
+                swal.close();
+            });
+        }
+    };
+
+    function youtube_parser(url){
+        var regExp = /^.*((youtu.be\/)|(v\/)|(\/u\/\w\/)|(embed\/)|(watch\?))\??v?=?([^#\&\?]*).*/;
+        var match = url.match(regExp);
+        return (match && match[7].length == 11) ? match[7] : url;
+    }
+
+    // At User
+    var API_URL = location.origin + '/api/';
+    var Vue_AtUser = new Vue({
+        el: '#AtUser',
+        data: {
+            result_text: '',
+            result_list: [],
+            is_loading: false
+        },
+        watch: {
+            result_text: function(val, oldVal) {
+                if (!!val) {
+                    this.getResultList(val);
+                } else {
+                    this.clearResult();
+                }
+            }
+        },
+        methods: {
+            clearResult: function() {
+                this.$set('result_list', []);
+                this.$set('result_text', '');
+            },
+            getResultList: function() {
+                var self = this;
+                var params = {
+                    term: self.$get('result_text'),
+                    tagged_ids: '[]'
+                };
+                self.$set('result_list', []);
+                self.$set('is_loading', true);
+                $.get(API_URL + 'talks/autocomplete', params, function(result){
+                    self.$set('result_list', result);
+                    self.$set('is_loading', false);
+                });
+            },
+            AtUserByID: function(user_account, user_id) {
+                var self = this;
+                var atMK = '[' + user_account + '](/users/' + user_id + ')';
+                var simplemde = $('#AtUser').data('simplemde');
+                simplemde.codemirror.replaceSelection(atMK);
+                $('#AtUser').modal('hide');
+
+                $(simplemde.element).parents('form').append(
+                    $('<input/>', {
+                        type: 'hidden',
+                        name: 'tagged_ids[]',
+                        value: user_id
+                    })
+                );
+            }
+        }
+    });
+
+    $('#AtUser').on('show.bs.modal', function (e) {
+        Vue_AtUser.clearResult();
+    });
+
+</script>
+
+        <script>
+            $(function() {
+                // hack fixed !!
+                $('[id="SimpleMDE"]').each(function(i, elm){
+                    $(elm).attr('id', 'SimpleMDE_' + i);
+                    var simplemde = new SimpleMDE({
+                        element: elm,
+                        previewRender: function(plainText, preview) {
+                            $.post("/api/preview", {
+                                description: plainText
+                            }, function(html) {
+                                preview.innerHTML = $('<div>' + html + '</div>').find('pre code').each(function(i, block) {
+                                    hljs.highlightBlock(block);
+                                }).end()[0].innerHTML;
+                            });
+
+                                return "Loading...";
+                            // return simplemde.markdown(plainText);
+                        },
+                        renderingConfig: {
+                            singleLineBreaks: false,
+                            codeSyntaxHighlighting: false,
+                        },
+                        spellChecker: false,
+                        status: true,
+                        parsingConfig: {
+                            allowAtxHeaderWithoutSpace: false,
+                            strikethrough: false,
+                            underscoresBreakWords: false,
+                        },
+                        toolbar: [
+                            Toolbar_Base['bold'],
+                            Toolbar_Base['italic'],
+                            Toolbar_Base['link'],
+                            Toolbar_Base['quote'],
+                            Toolbar_Base['code'],
+                            Toolbar_Base['image'],
+                            "|",
+                            Toolbar_UploadImage,
+                            Toolbar_Formula,
+                            Toolbar_Base['ordered-list'],
+                            Toolbar_Base['unordered-list'],
+                            Toolbar_Base['horizontal-rule'],
+                            Toolbar_YouTube,
+                            "|",
+                            Toolbar_Base['undo'],
+                            Toolbar_Base['redo'],
+                            Toolbar_BearMan,
+//                            Toolbar_AtUser,
+                            "|",
+                            Toolbar_Base['preview'],
+                            // Toolbar_HELP
+                        ],
+                        indentWithTabs: false,
+                        tabSize: 4
+                    });
+                    $(elm).data('simplemde', simplemde);
+                });
+                // end
+
+                $('.mk-instruction--answer,.mk-instruction--question,.mk-instruction--article').show();
+
+                function youtube_parser(url){
+                    var regExp = /^.*((youtu.be\/)|(v\/)|(\/u\/\w\/)|(embed\/)|(watch\?))\??v?=?([^#\&\?]*).*/;
+                    var match = url.match(regExp);
+                    return (match&&match[7].length==11)? match[7] : url;
+                }
+            });
+
+        </script>
+        <script src="https://ithelp.ithome.com.tw/lib/moment/moment.min.js"></script>
+    
+    <script src="https://ithelp.ithome.com.tw/lib/moment/moment-timezone.min.js"></script>
+    <script>
+        $(function () {
+            $('.post').css({
+                opacity: 1
+            });
+
+            // 校正時間
+            moment.locale('zh-tw');
+            moment.tz.add("Asia/Taipei|JWST JST CST CDT|-80 -90 -80 -90|01232323232323232323232323232323232323232|-1iw80 joM0 1yo0 Tz0 1ip0 1jX0 1cN0 11b0 1oN0 11b0 1oN0 11b0 1oN0 11b0 10N0 1BX0 10p0 1pz0 10p0 1pz0 10p0 1db0 1dd0 1db0 1cN0 1db0 1cN0 1db0 1cN0 1db0 1BB0 ML0 1Bd0 ML0 uq10 1db0 1cN0 1db0 97B0 AL0|74e5");
+            var $sys_time = $('#sys_time');
+            var $sys_time_style = $('#sys_time_style');
+            var $sys_time_reload = $('#sys_time_reload');
+            var getSysTime = function () {
+                $.get('/api/now', function (result) {
+                    var timestamp = result.timestamp * 1000;
+                    var fixTime = +new Date() - timestamp;
+                    moment.now = function () {
+                        return +new Date() - fixTime;
+                    };
+                    $sys_time_reload.removeClass('fa-spin');
+                });
+            };
+            $sys_time_reload.click(function () {
+                $sys_time_reload.addClass('fa-spin');
+                getSysTime();
+            });
+
+            getSysTime();
+
+            var upDateTime = function () {
+                var formatDate = moment().format('ZZ YYYY[年] M[月] D[日] HH:mm:ss');
+                $sys_time.text('UTC' + formatDate);
+
+                var deadline = moment().hour(23).minute(30);
+                if (moment().isAfter(deadline)) {
+                    $sys_time_style.addClass('ir-post-time--warning');
+                }
+            };
+
+            setInterval(upDateTime, 1000);
+
+        });
+    </script>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+            <script>
+            $(function () {
+                $('.CodeMirror-wrap textarea').on('input paste keydown', function () {
+                    var $this = $(this);
+                    var simplemde = $this.parents('form').find('textarea[name="description"]').data('simplemde');
+                    var length = simplemde.value().length;
+                    $('.post-counter').text('已輸入' + length + '字');
+                });
+            })
+        </script>
+    </body>
+
+</html>

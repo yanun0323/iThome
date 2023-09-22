@@ -25,20 +25,20 @@ Text("Hello World")             // 文字
 ---
 
 - ### 開發環境設定
-    - Day01: 前言、目錄、安裝 Xcode 的正確方式
+    - [Day01: 前言、目錄、安裝 Xcode 的正確方式](https://ithelp.ithome.com.tw/articles/10317588)
     - [Day02: Xcode 介面指南](https://ithelp.ithome.com.tw/articles/10320895)
 - ### SwiftUI 元件指南
     **靜態元件**
     - [Day03: 一切畫面的基礎 - View、Preview Provider、Canvas](https://ithelp.ithome.com.tw/articles/10321525)
-    - Day04: 放一些文字跟圖片吧 - Text、Image
-    - Day05: 幫你的人生增添一點色彩 - Color、ForegroundColor
-    - Day06: 什麼？上下左右？ - VStack, HStack, ZStack, Background, Overlay
-    - Day07: 資料排排站 - ForEach, Identifiable
+    - [Day04: 放一些文字跟圖片吧 - Text、Image](https://ithelp.ithome.com.tw/articles/10321542)
+    - [Day05: 幫你的人生增添一點色彩 - Color、ForegroundColor](https://ithelp.ithome.com.tw/articles/10323469)
+    - [Day06: 什麼？上下左右？ - VStack, HStack, ZStack, Background, Overlay](https://ithelp.ithome.com.tw/articles/10323918)
+    - [Day07: 資料排排站 - ForEach, Identifiable](https://ithelp.ithome.com.tw/articles/10324878)
     - Day08: 等等，你的程式碼有點亂喔 - ViewBuilder, Extension
 
     **動態元件**
     - Day09: 畫面資料怎麼改呢 - Combine, State, StateObject, ObservedObject
-    - Day10: 放一顆按鈕試試？ - Button
+    - Day10: 放一顆按鈕、打打字試試？ - Button, TextField
     - Day11: 來選擇障礙一下吧 - Picker, Menu
     - Day12: 我的畫面，沒有盡頭！ - ScrollView, List, TabView
     - Day13: 有時候得彈出一點東西 - Alert, PopupSheet
