@@ -37,8 +37,8 @@ Text("Hello World")             // 文字
     - Day08: 等等，你的程式碼有點亂喔 - ViewBuilder, Extension
 
     **動態元件**
-    - Day09: 畫面資料怎麼改呢 - Combine, State, StateObject, ObservedObject
-    - Day10: 放一顆按鈕、打打字試試？ - Button, TextField
+    - Day09: 放一顆按鈕試試？ - Button
+    - Day10: 暈頭轉向的資料綁定 - Combine, State, StateObject, ObservedObject
     - Day11: 來選擇障礙一下吧 - Picker, Menu
     - Day12: 我的畫面，沒有盡頭！ - ScrollView, List, TabView
     - Day13: 有時候得彈出一點東西 - Alert, PopupSheet

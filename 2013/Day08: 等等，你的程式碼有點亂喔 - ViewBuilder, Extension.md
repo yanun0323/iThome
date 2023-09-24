@@ -9,7 +9,7 @@
 
 假設我們已經完成了以下畫面：
 
-![Alt text](image-4.png)
+![https://ithelp.ithome.com.tw/upload/images/20230923/20162383TB4Ozcea5h.png](https://ithelp.ithome.com.tw/upload/images/20230923/20162383TB4Ozcea5h.png)
 
 ```swift
 VStack {
@@ -239,7 +239,7 @@ private func fmvp() -> some View {
 `ViewBuilder` 是一個`屬性包裝器`。
 > `屬性包裝器`（`Property Wrapper`）是一種語法糖，在變數、函式、結構前加上屬性包裝器，會讓該結構附加上該 `屬性包裝器` 的特性。
 
-![Alt text](image-5.png)
+![https://ithelp.ithome.com.tw/upload/images/20230923/201623833vo2NIx4r0.png](https://ithelp.ithome.com.tw/upload/images/20230923/201623833vo2NIx4r0.png)
 
 `ViewBuilder` 的優點有很多，但在介紹眾多功能優點之前，有一點跟功能面比較無關，但又影響很大的優點：
 
@@ -254,23 +254,24 @@ private func fmvp() -> some View {
 
 ### 可以回傳多個 View
 一般我們在寫 view function 時，回傳多個 `View` 而不用 `Stack` 包起來會噴錯：
-![Alt text](image-6.png)
+![https://ithelp.ithome.com.tw/upload/images/20230923/20162383LiMkTpWc0G.png](https://ithelp.ithome.com.tw/upload/images/20230923/20162383LiMkTpWc0G.png)
 
 加上 `ViewBuilder` 就沒問題了：
-![Alt text](image-7.png)
+![https://ithelp.ithome.com.tw/upload/images/20230923/20162383HzG0v0deRA.png](https://ithelp.ithome.com.tw/upload/images/20230923/20162383HzG0v0deRA.png)
 
 ### 可以使用 if-else
 一般我們在寫 view function 時，使用 if-else 會噴錯：
-![Alt text](image-8.png)
+![https://ithelp.ithome.com.tw/upload/images/20230923/201623833HWtKo73Oh.png](https://ithelp.ithome.com.tw/upload/images/20230923/201623833HWtKo73Oh.png)
 
 加上 `ViewBuilder` 就沒問題了：
-![Alt text](image-9.png)
+![https://ithelp.ithome.com.tw/upload/images/20230923/201623830Dm0P8sDEk.png](https://ithelp.ithome.com.tw/upload/images/20230923/201623830Dm0P8sDEk.png)
+
 ### 可以定義變數
 一般我們在寫 view function 時，在內部定義變數會噴錯：
-![Alt text](image-10.png)
+![https://ithelp.ithome.com.tw/upload/images/20230923/20162383DXgCJpEPDw.png](https://ithelp.ithome.com.tw/upload/images/20230923/20162383DXgCJpEPDw.png)
 
 加上 `ViewBuilder` 就沒問題了：
-![Alt text](image-11.png)
+![https://ithelp.ithome.com.tw/upload/images/20230923/20162383VAUsvZ5pit.png](https://ithelp.ithome.com.tw/upload/images/20230923/20162383VAUsvZ5pit.png)
 
 ### 好 ViewBuilder，不加嗎？
 
@@ -289,7 +290,7 @@ private func fmvp() -> some View {
 >
 > 這邊選 Swift File，取名為 `Settings.swift`
 
-![Alt text](image-12.png)
+![https://ithelp.ithome.com.tw/upload/images/20230923/20162383KhUMX7JKXd.png](https://ithelp.ithome.com.tw/upload/images/20230923/20162383KhUMX7JKXd.png)
 
 ### 以 `VStack` 為例
 我們不想要每次輸入 `spacing` 都輸入數字，如果未來要更改設計，這樣全部有 `VStack` 的地方都要改。
@@ -309,15 +310,15 @@ extension CGFloat {
 }
 ```
 
-![Alt text](image-16.png)
+![https://ithelp.ithome.com.tw/upload/images/20230923/20162383YkWCG9hYV6.png](https://ithelp.ithome.com.tw/upload/images/20230923/20162383YkWCG9hYV6.png)
 
 這樣我們下次用 `VStack` 的時候就可以直接使用了：
 
-![Alt text](image-17.png)
+![https://ithelp.ithome.com.tw/upload/images/20230923/20162383jfqj4IJKdB.png](https://ithelp.ithome.com.tw/upload/images/20230923/20162383jfqj4IJKdB.png)
 
 也可以使用在 `.padding`：
 
-![Alt text](image-18.png)
+![https://ithelp.ithome.com.tw/upload/images/20230923/20162383i1YR5QXixl.png](https://ithelp.ithome.com.tw/upload/images/20230923/20162383i1YR5QXixl.png)
 
 > 適合寫成 Global Setting 的是通用性較高的屬性、可以讓很多元件共用的，比如 `標籤高度`、`按鈕高度`、`背景顏色`
 > 
