@@ -1,4 +1,5 @@
 # 前言
+---
 此系列帶你從一個 Golang 後端工程師的角度，逐步學習 SwiftUI 這個充滿蘋果美學的框架。並利用後端工程師熟悉的 SQLite 來建構資料庫，取代理解成本稍高的 Core Data。並使用 Clean Architecture (乾淨架構) 來建構層級分明的 App。
 
 ### 什麼是 SwiftUI
@@ -34,11 +35,11 @@ Text("Hello World")             // 文字
     - [Day05: 幫你的人生增添一點色彩 - Color、ForegroundColor](https://ithelp.ithome.com.tw/articles/10323469)
     - [Day06: 什麼？上下左右？ - VStack, HStack, ZStack, Background, Overlay](https://ithelp.ithome.com.tw/articles/10323918)
     - [Day07: 資料排排站 - ForEach, Identifiable](https://ithelp.ithome.com.tw/articles/10324878)
-    - Day08: 等等，你的程式碼有點亂喔 - ViewBuilder, Extension
+    - [Day08: 等等，你的程式碼有點亂喔 - @ViewBuilder, Extension](https://ithelp.ithome.com.tw/articles/10325944)
 
     **動態元件**
-    - Day09: 放一顆按鈕試試？ - Button
-    - Day10: 暈頭轉向的資料綁定 - Combine, State, StateObject, ObservedObject
+    - [Day09: 放一顆按鈕試試？ - Button](https://ithelp.ithome.com.tw/articles/10326689)
+    - [Day10: 暈頭轉向的資料綁定 - @State, @Binding, @StateObject, @ObservedObject](https://ithelp.ithome.com.tw/articles/10327520)
     - Day11: 來選擇障礙一下吧 - Picker, Menu
     - Day12: 我的畫面，沒有盡頭！ - ScrollView, List, TabView
     - Day13: 有時候得彈出一點東西 - Alert, PopupSheet

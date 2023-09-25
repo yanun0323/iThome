@@ -57,8 +57,8 @@
 			children = (
 				A8B1CCA42AB7375200EB45B2 /* iThomeAppApp.swift */,
 				A8B1CCA62AB7375200EB45B2 /* ContentView.swift */,
-				A8C59A2A2ABD402500923A5B /* Settings.swift */,
 				A8B1CCB22AB821F800EB45B2 /* AnotherView.swift */,
+				A8C59A2A2ABD402500923A5B /* Settings.swift */,
 				A8B1CCA82AB7375300EB45B2 /* Assets.xcassets */,
 				A8B1CCAA2AB7375300EB45B2 /* Preview Content */,
 			);

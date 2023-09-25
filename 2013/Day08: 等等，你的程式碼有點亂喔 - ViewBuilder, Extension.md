@@ -233,17 +233,17 @@ private func fmvp() -> some View {
 }
 ```
 
-# ViewBuilder
+# @ViewBuilder
 ---
 
-`ViewBuilder` 是一個`屬性包裝器`。
+`@ViewBuilder` 是一個 `屬性包裝器`。
 > `屬性包裝器`（`Property Wrapper`）是一種語法糖，在變數、函式、結構前加上屬性包裝器，會讓該結構附加上該 `屬性包裝器` 的特性。
 
 ![https://ithelp.ithome.com.tw/upload/images/20230923/201623833vo2NIx4r0.png](https://ithelp.ithome.com.tw/upload/images/20230923/201623833vo2NIx4r0.png)
 
-`ViewBuilder` 的優點有很多，但在介紹眾多功能優點之前，有一點跟功能面比較無關，但又影響很大的優點：
+`@ViewBuilder` 的優點有很多，但在介紹眾多功能優點之前，有一點跟功能面比較無關，但又影響很大的優點：
 
-**ViewBuilder 可以讓看程式碼的人一眼就了解這個 function 是一個 View**
+**@ViewBuilder 可以讓看程式碼的人一眼就了解這個 function 是一個 View**
 
 這是我們在這個章節介紹他的原因，他可以讓整理過後的程式碼更好閱讀。
 
@@ -256,24 +256,24 @@ private func fmvp() -> some View {
 一般我們在寫 view function 時，回傳多個 `View` 而不用 `Stack` 包起來會噴錯：
 ![https://ithelp.ithome.com.tw/upload/images/20230923/20162383LiMkTpWc0G.png](https://ithelp.ithome.com.tw/upload/images/20230923/20162383LiMkTpWc0G.png)
 
-加上 `ViewBuilder` 就沒問題了：
+加上 `@ViewBuilder` 就沒問題了：
 ![https://ithelp.ithome.com.tw/upload/images/20230923/20162383HzG0v0deRA.png](https://ithelp.ithome.com.tw/upload/images/20230923/20162383HzG0v0deRA.png)
 
 ### 可以使用 if-else
 一般我們在寫 view function 時，使用 if-else 會噴錯：
 ![https://ithelp.ithome.com.tw/upload/images/20230923/201623833HWtKo73Oh.png](https://ithelp.ithome.com.tw/upload/images/20230923/201623833HWtKo73Oh.png)
 
-加上 `ViewBuilder` 就沒問題了：
+加上 `@ViewBuilder` 就沒問題了：
 ![https://ithelp.ithome.com.tw/upload/images/20230923/201623830Dm0P8sDEk.png](https://ithelp.ithome.com.tw/upload/images/20230923/201623830Dm0P8sDEk.png)
 
 ### 可以定義變數
 一般我們在寫 view function 時，在內部定義變數會噴錯：
 ![https://ithelp.ithome.com.tw/upload/images/20230923/20162383DXgCJpEPDw.png](https://ithelp.ithome.com.tw/upload/images/20230923/20162383DXgCJpEPDw.png)
 
-加上 `ViewBuilder` 就沒問題了：
+加上 `@ViewBuilder` 就沒問題了：
 ![https://ithelp.ithome.com.tw/upload/images/20230923/20162383VAUsvZ5pit.png](https://ithelp.ithome.com.tw/upload/images/20230923/20162383VAUsvZ5pit.png)
 
-### 好 ViewBuilder，不加嗎？
+### 好 @ViewBuilder，不加嗎？
 
 # Extension
 ---
@@ -405,5 +405,5 @@ struct ContentView: View {
 
 整理程式碼的重點：
 - 重複的程式碼可以抽出來
-- View Function 加上 `ViewBuilder` 屬性包裝器可以增加可讀性
+- View Function 加上 `@ViewBuilder` 屬性包裝器可以增加可讀性
 - Global Setting 可以整理成一個檔案並寫在 `Extension` 內
