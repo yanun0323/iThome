@@ -297,7 +297,7 @@ struct ContentView: View {
 - `@State`, `@Binding` 只會關注 `記憶體內容` 的變化
 - `@StateObject`, `@ObservedObject` 會關注 `ObservableObject` 內有添加 `@Published` 的屬性變化
 
-- 對不同物件，`View` 要選擇不同的屬性包裝器，可參考下表：
+- 對不同物件和用途，要選擇不同的屬性包裝器，可參考下表：
 
 |物件類型|舉例| 初始 / 新建的變數 | 傳遞變數
 |:-|:-|:-|:-
