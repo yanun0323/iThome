@@ -1,16 +1,19 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var showPopover: Bool = false
     var body: some View {
-        ScrollView(.vertical, showsIndicators: true) {
-            ForEach(1...100, id: \.self) { number in
-                HStack {
-                    Spacer()
-                    Text("\(number)")
-                        .font(.largeTitle)
-                    Spacer()
-                }
+        VStack {
+            Button {
+                showPopover = true
+            } label: {
+                Text("Show Popover")
             }
+            .buttonStyle(.borderedProminent)
+        }
+        .popover(isPresented: $showPopover, arrowEdge: .top) {
+            Text("Hello")
+                .presentationDetents([.medium, .large])
         }
     }
 }

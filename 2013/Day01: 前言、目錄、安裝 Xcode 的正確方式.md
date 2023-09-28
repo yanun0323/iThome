@@ -40,9 +40,9 @@ Text("Hello World")             // 文字
     **動態元件**
     - [Day09: 放一顆按鈕試試？ - Button](https://ithelp.ithome.com.tw/articles/10326689)
     - [Day10: 暈頭轉向的資料綁定 - @State, @Binding, @StateObject, @ObservedObject](https://ithelp.ithome.com.tw/articles/10327520)
-    - Day11: 來選擇障礙一下吧 - Picker, Menu
-    - Day12: 我的畫面，沒有盡頭！ - ScrollView, List, TabView
-    - Day13: 有時候得彈出一點東西 - Alert, PopupSheet
+    - [Day11: 來選擇障礙一下吧 - Picker, Menu](https://ithelp.ithome.com.tw/articles/10327519)
+    - [Day12: 我的畫面，沒有盡頭！ - ScrollView, List, TabView](https://ithelp.ithome.com.tw/articles/10329255)
+    - [Day13: 有時候得彈出一點東西 - Alert, Sheet, Popover](https://ithelp.ithome.com.tw/articles/10330165)
     - Day14: 層層疊疊的樹狀分頁 - NavigationStack
     - Day15: 用滑動做一點事 - Gesture
 - ### SQLite
