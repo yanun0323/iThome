@@ -13,6 +13,7 @@
 		A8B1CCAC2AB7375300EB45B2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8B1CCAB2AB7375300EB45B2 /* Preview Assets.xcassets */; };
 		A8B1CCB32AB821F800EB45B2 /* AnotherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B1CCB22AB821F800EB45B2 /* AnotherView.swift */; };
 		A8C59A2B2ABD402500923A5B /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8C59A2A2ABD402500923A5B /* Settings.swift */; };
+		A8EA90C02AC9275E009EE153 /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = A8EA90BF2AC9275E009EE153 /* SQLite */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8EA90C02AC9275E009EE153 /* SQLite in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +91,9 @@
 			dependencies = (
 			);
 			name = iThomeApp;
+			packageProductDependencies = (
+				A8EA90BF2AC9275E009EE153 /* SQLite */,
+			);
 			productName = iThomeApp;
 			productReference = A8B1CCA12AB7375200EB45B2 /* iThomeApp.app */;
 			productType = "com.apple.product-type.application";
@@ -117,6 +122,9 @@
 				Base,
 			);
 			mainGroup = A8B1CC982AB7375200EB45B2;
+			packageReferences = (
+				A8EA90BE2AC9275E009EE153 /* XCRemoteSwiftPackageReference "SQLite" */,
+			);
 			productRefGroup = A8B1CCA22AB7375200EB45B2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -347,6 +355,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A8EA90BE2AC9275E009EE153 /* XCRemoteSwiftPackageReference "SQLite" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/stephencelis/SQLite.swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.14.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A8EA90BF2AC9275E009EE153 /* SQLite */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A8EA90BE2AC9275E009EE153 /* XCRemoteSwiftPackageReference "SQLite" */;
+			productName = SQLite;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A8B1CC992AB7375200EB45B2 /* Project object */;
 }

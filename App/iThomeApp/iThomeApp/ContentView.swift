@@ -1,25 +1,18 @@
 import SwiftUI
+import SQLite
 
-struct ContentView: View {
-    @State private var showPopover: Bool = false
-    var body: some View {
+
+struct ContentView: SwiftUI.View {
+    
+    var body: some SwiftUI.View {
         VStack {
-            Button {
-                showPopover = true
-            } label: {
-                Text("Show Popover")
-            }
-            .buttonStyle(.borderedProminent)
-        }
-        .popover(isPresented: $showPopover, arrowEdge: .top) {
-            Text("Hello")
-                .presentationDetents([.medium, .large])
+            
         }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
+    static var previews: some SwiftUI.View {
         ContentView()
     }
 }

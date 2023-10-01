@@ -43,10 +43,10 @@ Text("Hello World")             // 文字
     - [Day11: 來選擇障礙一下吧 - Picker, Menu](https://ithelp.ithome.com.tw/articles/10327519)
     - [Day12: 我的畫面，沒有盡頭！ - ScrollView, List, TabView](https://ithelp.ithome.com.tw/articles/10329255)
     - [Day13: 有時候得彈出一點東西 - Alert, Sheet, Popover](https://ithelp.ithome.com.tw/articles/10330165)
-    - Day14: 層層疊疊的樹狀分頁 - NavigationStack
-    - Day15: 用滑動做一點事 - Gesture
+    - [Day14: 層層疊疊的樹狀分頁 - NavigationStack](https://ithelp.ithome.com.tw/articles/10331003)
+    - [Day15: 用你的手指做一點事 - Gesture](https://ithelp.ithome.com.tw/articles/10331592)
 - ### SQLite
-    - Day16: 後端工程師的好朋友 - SQLite
+    - [Day16: 後端工程師的好朋友 - SQLite](https://ithelp.ithome.com.tw/articles/10332042)
     - Day17: 好，該定義你的 DB Schema 了 - Table Migration
     - Day18: 要一些資料、刪掉一些資料 - GET, DELETE
     - Day19: 塞一些資料、更新一些資料 - INSERT, UPDATE

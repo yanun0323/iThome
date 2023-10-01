@@ -158,6 +158,15 @@ struct ContentView: View {
 - arrowEdge：`Popover` 在 `iPad`, `macOS` 中彈出的方向
 - content：`Popover` 內要顯示的 `View`
 
+### 更改 Popover 樣式
+透過 `.presentationCompactAdaptation` 修飾器，也可以將 `iPhone` 上的 `Popover` 改成跟 `iPad` 上的一樣：
+
+```swift
+.presentationCompactAdaptation(.popover)
+```
+
+可以自己試試。
+
 # 總結
 ---
 
