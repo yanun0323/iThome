@@ -1,14 +1,13 @@
-//
-//  iThomeAppApp.swift
-//  iThomeApp
-//
-//  Created by Yanun on 2023/9/17.
-//
-
 import SwiftUI
+import SQLite
 
 @main
 struct iThomeAppApp: App {
+    
+    init() {
+        
+    }
+    
     var body: some Scene {
         WindowGroup {
             ContentView()

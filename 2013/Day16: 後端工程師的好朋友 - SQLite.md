@@ -42,3 +42,8 @@ import SQLite
 ![https://ithelp.ithome.com.tw/upload/images/20231001/20162383E6FMcLPuuY.png](https://ithelp.ithome.com.tw/upload/images/20231001/20162383E6FMcLPuuY.png)
 
 加入套件後我們就可以開始使用 `SQLite` 了！
+
+# 參考資料
+---
+
+- [stephencelis/SQLite 官方文件](https://github.com/stephencelis/SQLite.swift/blob/master/Documentation/Index.md#sqliteswift-documentation)

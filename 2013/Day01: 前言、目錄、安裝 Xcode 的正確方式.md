@@ -47,9 +47,9 @@ Text("Hello World")             // 文字
     - [Day15: 用你的手指做一點事 - Gesture](https://ithelp.ithome.com.tw/articles/10331592)
 - ### SQLite
     - [Day16: 後端工程師的好朋友 - SQLite](https://ithelp.ithome.com.tw/articles/10332042)
-    - Day17: 好，該定義你的 DB Schema 了 - Table Migration
-    - Day18: 要一些資料、刪掉一些資料 - GET, DELETE
-    - Day19: 塞一些資料、更新一些資料 - INSERT, UPDATE
+    - [Day17: 好，該定義你的 DB Schema 了 - Table Migration](https://ithelp.ithome.com.tw/articles/10332757)
+    - [Day18: 新增、刪除、更新資料 - CREATE, UPDATE, DELETE](https://ithelp.ithome.com.tw/articles/10333467)
+    - Day19: 取得資料 - READ
     - Day20: 沒有，我只是想推銷一下自己寫的 Package - Sworm
 - ### Clean Architecture 
     - Day21: 哇！這是什麼鬼架構？ - Architecture
