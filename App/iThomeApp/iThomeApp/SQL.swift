@@ -61,3 +61,32 @@ func deleteMember(_ db: Connection, member: Member) {
         print("delete member \(member.name) error: \(error)")
     }
 }
+
+func findMember(_ db: Connection, name target: String) -> [Member]? {
+    do {
+        let rows = try db.prepare(
+            tableMember
+                .select(id, name, position)
+                .where(name == target && position == .Mid)
+                .order(id.asc)
+        )
+        
+        var members: [Member] = []
+
+        for row in rows {
+            let id = try row.get(id)
+            let name = try row.get(name)
+            let position = try row.get(position)
+
+            let member = Member(id: id, name: name, position: position)
+            members.append(member)
+        }
+        
+        return members
+        
+    } catch {
+        print("find member name: \(target) error: \(error)")
+    }
+    
+    return nil
+}
