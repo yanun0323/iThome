@@ -1,16 +1,12 @@
 import SwiftUI
-import SQLite
 
 @main
 struct iThomeAppApp: App {
-    
-    init() {
-        
-    }
-    
+    private var container = DIContainer()
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environment(\.injected, container)
         }
     }
 }
