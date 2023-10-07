@@ -69,7 +69,7 @@
 - 提供 `Publisher` 給 `View` 訂閱
 
 ### View
-`View` 即是 `SwiftUI.View` 負責畫面顯示。
+`View` 即是 `SwiftUI.View`，負責畫面顯示。
 - 訂閱 `AppState` 的資料，來監聽資料的變化
 - 觸發資料變更邏輯時調用 `Interactor`
 
@@ -79,7 +79,7 @@
 ### 介面
 理想上各模組間要以介面來隔開（ `Swift` 裡的 `Protocol` ）。
 
-才能達到個模組間的解耦，只關注介面，不關注方法內的實作。
+才能達到各模組間的解耦，只關注介面，不關注方法內的實作。
 
 
 # 實作 SwiftUI Clean Architecture
@@ -221,8 +221,8 @@ struct iThomeAppApp: App {
 ---
 整個 `SwiftUI Clean Architecture` 是以 `DIContainer` 為包裝。
 
-1. `View` 訂閱 `DIContainer.AppState` 的變數並顯示出來。
-1. `View` 資料有變化時，調用 `DIContainer.Interactor` 來處理資料。
+1. `View` 訂閱 `DIContainer.AppState` 的變數並顯示出來
+1. `View` 資料有變化時，調用 `DIContainer.Interactor` 來處理資料
 1. `DIContainer.Interactor` 處理資料，並與 `Repository` 互動來儲存資料
 1. `DIContainer.Interactor` 處理資料後將資料推播到 `AppState`
 1. `AppState` 收到資料，儲存並推送給所有訂閱該資料的 `View`

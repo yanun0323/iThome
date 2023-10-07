@@ -53,7 +53,7 @@ Text("Hello World")             // 文字
     - [Day20: 沒有，我只是想推銷一下自己寫的 Package - Sworm](https://ithelp.ithome.com.tw/articles/10334604)
 - ### Clean Architecture 
     - [Day21: 哇！這是什麼鬼架構？ - Clean Architecture](https://ithelp.ithome.com.tw/articles/10335570)
-    - Day22: 狀態夏令營 - AppState
+    - [Day22: 狀態夏令營 - AppState](https://ithelp.ithome.com.tw/articles/10336078)
     - Day23: 庫存應該可以到處拿吧？ - Repository
     - Day24: 業務邏輯就只能是邏輯 - Interactor
     - Day25: 不是，我只是想推銷一下自己寫的 Package - Ditto
