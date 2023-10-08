@@ -22,6 +22,7 @@ extension SQLiteMemberDao where Self: MemberRepository {
             return t
         }
         
+        
         var result = [Member]()
         for row in rows {
             result.append(try Member.parse(row))

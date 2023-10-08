@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		A8AB73942AC933CF00AD7EE3 /* Member.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8AB73932AC933CF00AD7EE3 /* Member.swift */; };
-		A8AB73962AC935AF00AD7EE3 /* SQL.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8AB73952AC935AF00AD7EE3 /* SQL.swift */; };
 		A8B1CCA52AB7375200EB45B2 /* iThomeAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B1CCA42AB7375200EB45B2 /* iThomeAppApp.swift */; };
 		A8B1CCA72AB7375200EB45B2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B1CCA62AB7375200EB45B2 /* ContentView.swift */; };
 		A8B1CCA92AB7375300EB45B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8B1CCA82AB7375300EB45B2 /* Assets.xcassets */; };
@@ -21,12 +20,12 @@
 		A8B9E4102AD2A7D900039BBD /* Dao.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B9E40F2AD2A7D900039BBD /* Dao.swift */; };
 		A8B9E4152AD2F76800039BBD /* SQLiteDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B9E4142AD2F76800039BBD /* SQLiteDao.swift */; };
 		A8B9E4172AD2F7D400039BBD /* SQLiteMemberDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B9E4162AD2F7D400039BBD /* SQLiteMemberDao.swift */; };
+		A8B9E4192AD3234600039BBD /* MemberInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B9E4182AD3234600039BBD /* MemberInteractor.swift */; };
 		A8EA90C02AC9275E009EE153 /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = A8EA90BF2AC9275E009EE153 /* SQLite */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A8AB73932AC933CF00AD7EE3 /* Member.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Member.swift; sourceTree = "<group>"; };
-		A8AB73952AC935AF00AD7EE3 /* SQL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQL.swift; sourceTree = "<group>"; };
 		A8B1CCA12AB7375200EB45B2 /* iThomeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iThomeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8B1CCA42AB7375200EB45B2 /* iThomeAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iThomeAppApp.swift; sourceTree = "<group>"; };
 		A8B1CCA62AB7375200EB45B2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -39,6 +38,7 @@
 		A8B9E40F2AD2A7D900039BBD /* Dao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dao.swift; sourceTree = "<group>"; };
 		A8B9E4142AD2F76800039BBD /* SQLiteDao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteDao.swift; sourceTree = "<group>"; };
 		A8B9E4162AD2F7D400039BBD /* SQLiteMemberDao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteMemberDao.swift; sourceTree = "<group>"; };
+		A8B9E4182AD3234600039BBD /* MemberInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberInteractor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				A8B9E4092AD03B1000039BBD /* Interactor.swift */,
+				A8B9E4182AD3234600039BBD /* MemberInteractor.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -148,7 +149,6 @@
 		A8B9E4032AD03AC100039BBD /* Util */ = {
 			isa = PBXGroup;
 			children = (
-				A8AB73952AC935AF00AD7EE3 /* SQL.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -248,7 +248,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A8AB73962AC935AF00AD7EE3 /* SQL.swift in Sources */,
+				A8B9E4192AD3234600039BBD /* MemberInteractor.swift in Sources */,
 				A8B1CCA72AB7375200EB45B2 /* ContentView.swift in Sources */,
 				A8B9E4172AD2F7D400039BBD /* SQLiteMemberDao.swift in Sources */,
 				A8B9E4152AD2F76800039BBD /* SQLiteDao.swift in Sources */,

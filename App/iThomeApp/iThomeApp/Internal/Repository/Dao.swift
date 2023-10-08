@@ -2,8 +2,8 @@ import Foundation
 import Sworm
 
 struct Dao: SQLiteDao {
-    init() {
-        let conn = SQL.setup(dbName: "database", isMock: false)
+    init(isMock: Bool) {
+        let conn = SQL.setup(dbName: "database", isMock: isMock)
         conn.migrate([Member.self])
     }
 }

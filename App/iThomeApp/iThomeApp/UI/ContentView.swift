@@ -10,7 +10,8 @@ struct ContentView: View {
             memberList()
             TestButton()
         }
-        .onReceive(container.appState!.members) { members = $0 ?? [] }
+        .onReceive(container.appState.members) { members = $0 ?? [] }
+        .onAppear { container.interactor.member.getAllMember() }
     }
     
     @ViewBuilder
@@ -20,7 +21,12 @@ struct ContentView: View {
                 Text("Empty Member!")
             } else {
                 ForEach(members, id: \.id) { member in
-                    Text("\(member.id) \(member.name)")
+                    Text("\(member.id)")
+                        .lineLimit(1)
+                    Text("\(member.name)")
+                        .lineLimit(1)
+                    Text("\(member.position.rawValue)")
+                        .lineLimit(1)
                 }
             }
         }
@@ -29,11 +35,9 @@ struct ContentView: View {
     @ViewBuilder
     private func TestButton() -> some View {
         Button("Test Push Members") {
-            let randomID = Int64.random(in: 1...50)
-            container.appState?.members.send([
-                Member(id: randomID, name: "Faker", position: .Mid),
-                Member(id: 50 - randomID, name: "MaRin", position: .Top)
-            ])
+            let random = Member(id: Int64.random(in: 1...Int64.max), name: UUID().uuidString, position: .Mid)
+        
+            _ = container.interactor.member.saveMember(random)
         }
         .buttonStyle(.borderedProminent)
     }
@@ -42,6 +46,6 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
-            .environment(\.injected, DIContainer(appState: AppState()))
+            .environment(\.injected, DIContainer(isMock: true))
     }
 }

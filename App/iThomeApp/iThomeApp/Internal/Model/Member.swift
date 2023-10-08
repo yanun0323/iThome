@@ -2,22 +2,22 @@ import Foundation
 import SQLite
 import Sworm
 
-enum Position: Int {
+enum Position: Int64 {
     case Top = 1, JG = 2, Mid = 3, ADC = 4, Support = 5
 }
 
 extension Position: Value {
-    typealias Datatype = Int
+    typealias Datatype = Int64
     
     static var declaredDatatype: String {
-        Int.declaredDatatype
+        Int64.declaredDatatype
     }
     
-    static func fromDatatypeValue(_ datatypeValue: Int) -> Position {
-        return Position(rawValue: datatypeValue) ?? .Support
+    static func fromDatatypeValue(_ datatypeValue: Int64) -> Position {
+        return Position(rawValue:datatypeValue) ?? .Support
     }
     
-    var datatypeValue: Int {
+    var datatypeValue: Int64 {
         return self.rawValue
     }
 }
@@ -37,29 +37,34 @@ extension Member: Migrator {
     static let position = Expression<Position>("position")
     
     static func migrate(_ db: Connection) throws {
-        try db.run(tableMember.create(ifNotExists: true) { t in
+        try db.run(sqlTable.create(ifNotExists: true) { t in
             t.column(id, primaryKey: .autoincrement)
             t.column(name, unique: true)
             t.column(position)
         })
         
-        try db.run(tableMember.createIndex(name, ifNotExists: true))
-
+        try db.run(sqlTable.createIndex(name, ifNotExists: true))
     }
     
     static func parse(_ row: Row) throws -> Member {
+        let pID = try row.get(id)
+        print("id \(pID)")
+        let pName = try row.get(name)
+        print("name \(pName)")
+        let pPosition = try row.get(position)
+        print("position: \(pPosition)")
         return Member(
-            id: try row.get(id),
-            name: try row.get(name),
-            position: try row.get(position)
+            id: pID,
+            name: pName,
+            position: pPosition
         )
     }
     
     func setter() -> [Setter] {
         return [
-            Member.id <- self.id,
-            Member.name <- self.name,
-            Member.position <- self.position
+            Member.id <- id,
+            Member.name <- name,
+            Member.position <- position
         ]
     }
 }

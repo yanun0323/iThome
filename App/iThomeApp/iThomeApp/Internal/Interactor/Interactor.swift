@@ -2,6 +2,10 @@ import Foundation
 
 struct Interactor {
     var member: MemberInteractor
+    
+    init(appState: AppState, repo: Repository) {
+        self.member = MemberInteractorService(appState: appState, repo: repo)
+    }
 }
 
 protocol MemberInteractor {
