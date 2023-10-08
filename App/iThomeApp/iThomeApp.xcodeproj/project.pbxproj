@@ -18,6 +18,9 @@
 		A8B9E4072AD03AF200039BBD /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B9E4062AD03AF200039BBD /* AppState.swift */; };
 		A8B9E40A2AD03B1000039BBD /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B9E4092AD03B1000039BBD /* Interactor.swift */; };
 		A8B9E40C2AD03F3400039BBD /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B9E40B2AD03F3400039BBD /* Repository.swift */; };
+		A8B9E4102AD2A7D900039BBD /* Dao.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B9E40F2AD2A7D900039BBD /* Dao.swift */; };
+		A8B9E4152AD2F76800039BBD /* SQLiteDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B9E4142AD2F76800039BBD /* SQLiteDao.swift */; };
+		A8B9E4172AD2F7D400039BBD /* SQLiteMemberDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B9E4162AD2F7D400039BBD /* SQLiteMemberDao.swift */; };
 		A8EA90C02AC9275E009EE153 /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = A8EA90BF2AC9275E009EE153 /* SQLite */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +36,9 @@
 		A8B9E4062AD03AF200039BBD /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		A8B9E4092AD03B1000039BBD /* Interactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interactor.swift; sourceTree = "<group>"; };
 		A8B9E40B2AD03F3400039BBD /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		A8B9E40F2AD2A7D900039BBD /* Dao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dao.swift; sourceTree = "<group>"; };
+		A8B9E4142AD2F76800039BBD /* SQLiteDao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteDao.swift; sourceTree = "<group>"; };
+		A8B9E4162AD2F7D400039BBD /* SQLiteMemberDao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteMemberDao.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +114,8 @@
 			isa = PBXGroup;
 			children = (
 				A8B9E40B2AD03F3400039BBD /* Repository.swift */,
+				A8B9E40F2AD2A7D900039BBD /* Dao.swift */,
+				A8B9E4132AD2F75B00039BBD /* SQLite */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -151,6 +159,15 @@
 				A8B9E4062AD03AF200039BBD /* AppState.swift */,
 			);
 			path = AppState;
+			sourceTree = "<group>";
+		};
+		A8B9E4132AD2F75B00039BBD /* SQLite */ = {
+			isa = PBXGroup;
+			children = (
+				A8B9E4142AD2F76800039BBD /* SQLiteDao.swift */,
+				A8B9E4162AD2F7D400039BBD /* SQLiteMemberDao.swift */,
+			);
+			path = SQLite;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,11 +250,14 @@
 			files = (
 				A8AB73962AC935AF00AD7EE3 /* SQL.swift in Sources */,
 				A8B1CCA72AB7375200EB45B2 /* ContentView.swift in Sources */,
+				A8B9E4172AD2F7D400039BBD /* SQLiteMemberDao.swift in Sources */,
+				A8B9E4152AD2F76800039BBD /* SQLiteDao.swift in Sources */,
 				A8B1CCA52AB7375200EB45B2 /* iThomeAppApp.swift in Sources */,
 				A8B9E40C2AD03F3400039BBD /* Repository.swift in Sources */,
 				A8B9E4072AD03AF200039BBD /* AppState.swift in Sources */,
 				A8B9E4052AD03AE700039BBD /* DependencyInjector.swift in Sources */,
 				A8B9E40A2AD03B1000039BBD /* Interactor.swift in Sources */,
+				A8B9E4102AD2A7D900039BBD /* Dao.swift in Sources */,
 				A8AB73942AC933CF00AD7EE3 /* Member.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
