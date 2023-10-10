@@ -153,7 +153,7 @@ Section("Title", font: .caption, color: .gray, radius: 15, bg: .section) {
 
 `...`
 
-有興趣可以看看原始碼～
+還有非常多鬼東西，有興趣可以看看原始碼～
 
 # 參考資料
 ---

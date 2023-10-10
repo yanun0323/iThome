@@ -56,7 +56,7 @@ Text("Hello World")             // 文字
     - [Day22: 狀態夏令營 - AppState](https://ithelp.ithome.com.tw/articles/10336078)
     - [Day23: 庫存應該可以到處拿吧？ - Repository](https://ithelp.ithome.com.tw/articles/10336785)
     - [Day24: 業務邏輯就只能是邏輯 - Interactor](https://ithelp.ithome.com.tw/articles/10336906)
-    - Day25: 不是，我只是想推銷一下自己寫的 Package - Ditto
+    - [Day25: 不是，我只是想推銷一下自己寫的 Package - Ditto](https://ithelp.ithome.com.tw/articles/10337676)
 - ### 來試試開發 APP 吧
     - Day26: 先等等！你的APP想長怎樣？ - Concept View
     - Day27: 好的！那你的資料怎麼跑？ - Data Flow Design
