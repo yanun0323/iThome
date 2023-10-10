@@ -97,9 +97,9 @@ struct Interactor {
 }
 ```
 
-> 這邊將 `AppState` 及 `Repository` 傳進來也是一種依賴反轉的方式
+> 這邊將 `AppState` 及 `Repository` 傳進來是一種依賴注入
 >
-> 不管 `AppState` `Repository` 內容實作什麼，只關注他們的行為
+> 未來要抽換 `AppState` `Repository`，只需要從外部更改即可
 
 # DIContainer Init 方法 & Dao 調整
 ---

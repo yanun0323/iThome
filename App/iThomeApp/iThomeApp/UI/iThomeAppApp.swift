@@ -1,4 +1,5 @@
 import SwiftUI
+import Ditto
 
 @main
 struct iThomeAppApp: App {
@@ -6,7 +7,7 @@ struct iThomeAppApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .environment(\.injected, container)
+                .inject(container)
         }
     }
 }

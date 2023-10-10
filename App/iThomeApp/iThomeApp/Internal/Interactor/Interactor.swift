@@ -1,10 +1,22 @@
 import Foundation
 
 struct Interactor {
+    static private var `default`: Interactor?
+    
     var member: MemberInteractor
     
-    init(appState: AppState, repo: Repository) {
+    init(appState: AppState, isMock: Bool) {
+        let repo = Dao(isMock: isMock)
         self.member = MemberInteractorService(appState: appState, repo: repo)
+    }
+}
+
+extension Interactor {
+    static func get(_ isMock: Bool) -> Interactor {
+        if Self.default == nil {
+            Self.default = Interactor(appState: .get(), isMock: isMock)
+        }
+        return Self.default!
     }
 }
 

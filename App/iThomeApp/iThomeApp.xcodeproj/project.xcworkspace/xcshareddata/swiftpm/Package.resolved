@@ -1,6 +1,15 @@
 {
   "pins" : [
     {
+      "identity" : "ditto",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/yanun0323/Ditto",
+      "state" : {
+        "branch" : "master",
+        "revision" : "54942e160906153595cfc6907eda98ef789dd5f3"
+      }
+    },
+    {
       "identity" : "sqlite.swift",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/stephencelis/SQLite.swift",
