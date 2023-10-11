@@ -15,6 +15,7 @@
 		A8B9E4492AD671B300039BBD /* Sworm in Frameworks */ = {isa = PBXBuildFile; productRef = A8B9E4482AD671B300039BBD /* Sworm */; };
 		A8B9E44C2AD671CB00039BBD /* Ditto in Frameworks */ = {isa = PBXBuildFile; productRef = A8B9E44B2AD671CB00039BBD /* Ditto */; };
 		A8B9E44F2AD6721800039BBD /* ConceptHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B9E44E2AD6721800039BBD /* ConceptHomeView.swift */; };
+		A8B9E4512AD6E67800039BBD /* TodoEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B9E4502AD6E67800039BBD /* TodoEvent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		A8B9E4322AD6712D00039BBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A8B9E4352AD6712D00039BBD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A8B9E44E2AD6721800039BBD /* ConceptHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConceptHomeView.swift; sourceTree = "<group>"; };
+		A8B9E4502AD6E67800039BBD /* TodoEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoEvent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 		A8B9E43F2AD6715B00039BBD /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A8B9E4502AD6E67800039BBD /* TodoEvent.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -230,6 +233,7 @@
 			files = (
 				A8B9E4312AD6712C00039BBD /* ContentView.swift in Sources */,
 				A8B9E42F2AD6712C00039BBD /* TodoListApp.swift in Sources */,
+				A8B9E4512AD6E67800039BBD /* TodoEvent.swift in Sources */,
 				A8B9E44F2AD6721800039BBD /* ConceptHomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
