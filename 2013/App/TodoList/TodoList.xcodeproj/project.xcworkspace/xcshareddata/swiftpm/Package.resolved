@@ -1,0 +1,32 @@
+{
+  "pins" : [
+    {
+      "identity" : "ditto",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/yanun0323/Ditto",
+      "state" : {
+        "revision" : "5d1f72c22290696fba46c9a8306d799e8c0fd5fe",
+        "version" : "0.1.3"
+      }
+    },
+    {
+      "identity" : "sqlite.swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/stephencelis/SQLite.swift",
+      "state" : {
+        "revision" : "7a2e3cd27de56f6d396e84f63beefd0267b55ccb",
+        "version" : "0.14.1"
+      }
+    },
+    {
+      "identity" : "sworm",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/yanun0323/Sworm",
+      "state" : {
+        "revision" : "f85aa46e4f824248145ecf17833fcb6443150459",
+        "version" : "0.1.4"
+      }
+    }
+  ],
+  "version" : 2
+}

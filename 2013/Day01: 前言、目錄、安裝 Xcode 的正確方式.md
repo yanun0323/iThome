@@ -58,7 +58,7 @@ Text("Hello World")             // 文字
     - [Day24: 業務邏輯就只能是邏輯 - Interactor](https://ithelp.ithome.com.tw/articles/10336906)
     - [Day25: 不是，我只是想推銷一下自己寫的 Package - Ditto](https://ithelp.ithome.com.tw/articles/10337676)
 - ### 來試試開發 APP 吧
-    - Day26: 先等等！你的APP想長怎樣？ - Concept View
+    - [Day26: 先等等！你的APP想長怎樣？ - Concept View](https://ithelp.ithome.com.tw/articles/10338108)
     - Day27: 好的！那你的資料怎麼跑？ - Data Flow Design
     - Day28: 開始動手吧，寫程式囉 - Repository, Interactor, AppState
     - Day29: 剛剛的畫面呢？拿來用吧 - View, Refactor
