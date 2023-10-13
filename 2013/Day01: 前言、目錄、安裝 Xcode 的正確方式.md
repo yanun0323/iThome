@@ -61,7 +61,7 @@ Text("Hello World")             // 文字
     - [Day26: 先等等！你的APP想長怎樣？ - Concept View](https://ithelp.ithome.com.tw/articles/10338108)
     - [Day27: 好的！那你的資料怎麼跑？ - Data Flow Design](https://ithelp.ithome.com.tw/articles/10338544)
     - [Day28: 開始動手吧，寫程式囉 - Repository, Interactor, AppState](https://ithelp.ithome.com.tw/articles/10339016)
-    - Day29: 剛剛的畫面呢？拿來用吧 - View, Refactor
+    - [Day29: 剛剛的畫面呢？拿來用吧 - View, Refactor](https://ithelp.ithome.com.tw/articles/10339039)
     - Day30: 學習資源、結語
 
 # 安裝 Xcode 的正確方式

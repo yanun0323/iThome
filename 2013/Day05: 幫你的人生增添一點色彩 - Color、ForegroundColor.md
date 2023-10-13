@@ -1,4 +1,3 @@
-
 不管是文字、圖片，還有未來其他的元件都會用到顏色，今天就來看看 `SwiftUI` 的顏色。
 
 # Color
@@ -10,7 +9,7 @@
 Color.red
 ```
 
-![Alt text](image.png)
+![https://ithelp.ithome.com.tw/upload/images/20230920/20162383wBeDv0nMhb.png](https://ithelp.ithome.com.tw/upload/images/20230920/20162383wBeDv0nMhb.png)
 
 `Color` 也是一個 `View`，所以 `View` 可以用的基本修飾器他也可以用，例如 `frame`
 
@@ -20,7 +19,7 @@ Color.red
     .cornerRadius(15)
 ```
 
-![Alt text](image-10.png)
+![https://ithelp.ithome.com.tw/upload/images/20230920/201623833VMBkXQaGC.png](https://ithelp.ithome.com.tw/upload/images/20230920/201623833VMBkXQaGC.png)
 
 > `.cornerRadius` 是圓角矩形修飾器，也在 `Image` 上試試看？
 
@@ -30,26 +29,27 @@ Color.red
 
 > 先在 Assets.xcassets 內新建 Color Set
 
-![Alt text](image-1.png)
+![https://ithelp.ithome.com.tw/upload/images/20230920/201623831vTTiEu6cy.png](https://ithelp.ithome.com.tw/upload/images/20230920/201623831vTTiEu6cy.png)
 
 > 取好名稱（我這邊取名 `T1`），然後開起最右邊的 `Inspectors` 面板
 
-![Alt text](image-2.png)
+![https://ithelp.ithome.com.tw/upload/images/20230920/20162383lKAtpXwT6c.png](https://ithelp.ithome.com.tw/upload/images/20230920/20162383lKAtpXwT6c.png)
 
 > 右邊面板的 `Appearances` 欄位可以定義你的顏色是否要根據深色模式來額外定義：
 
-![Alt text](image-3.png)
+![https://ithelp.ithome.com.tw/upload/images/20230920/20162383XiOzXCykiI.png](https://ithelp.ithome.com.tw/upload/images/20230920/20162383XiOzXCykiI.png)
 
 > 點選中間顏色區塊，就可以在右邊面板選擇你要的顏色
 
-![Alt text](image-6.png)
+![https://ithelp.ithome.com.tw/upload/images/20230920/20162383HhUdnF4KjC.png](https://ithelp.ithome.com.tw/upload/images/20230920/20162383HhUdnF4KjC.png)
 
 > 之後就可以使用這個 `Color`
 
 ```swift
 Color("T1")
 ```
-![Alt text](image-7.png)
+
+![https://ithelp.ithome.com.tw/upload/images/20230920/20162383lPQVOhtWIs.png](https://ithelp.ithome.com.tw/upload/images/20230920/20162383lPQVOhtWIs.png)
 
 # ForegroundColor
 ---
@@ -60,14 +60,14 @@ Text("Faker! What was that!")
     .foregroundColor(.blue)
 ```
 
-![Alt text](image-8.png)
+![https://ithelp.ithome.com.tw/upload/images/20230920/201623830xeFKAr27s.png](https://ithelp.ithome.com.tw/upload/images/20230920/201623830xeFKAr27s.png)
 
 ```swift
 Image(systemName: "square.and.arrow.up")
     .foregroundColor(.blue)
 ```
 
-![Alt text](image-9.png)
+![https://ithelp.ithome.com.tw/upload/images/20230920/20162383e4dxOMEg7r.png](https://ithelp.ithome.com.tw/upload/images/20230920/20162383e4dxOMEg7r.png)
 
 # 總結
 ---
