@@ -171,7 +171,18 @@ private func testError() -> some View {
 
 隨便塞到 `body` 內做測試：
 
-![Alt text](image.png)
+![https://ithelp.ithome.com.tw/upload/images/20231013/20162383sUaMnuByyV.png](https://ithelp.ithome.com.tw/upload/images/20231013/20162383sUaMnuByyV.png)
+
+# 完成
+---
+
+APP 完成後可以進模擬器跑跑看。
+
+也可以把你的手機接上，在手機上安裝你的 APP：
+
+![https://ithelp.ithome.com.tw/upload/images/20231013/20162383s1g5llu7tK.png](https://ithelp.ithome.com.tw/upload/images/20231013/20162383s1g5llu7tK.png)
+
+> 詳細這邊就不多做說明了，網路上很多資源自己去找吧！
 
 # 總結
 ---
@@ -181,4 +192,4 @@ private func testError() -> some View {
 
 > 比如說 `listView` 可以額外寫成另一個 `View` 結構
 
-
+`TodoList` 專案的程式碼放在 [**github**](https://github.com/yanun0323/iThome/tree/main/2013/App/TodoList)，有興趣可以去看看。
