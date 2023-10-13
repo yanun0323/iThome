@@ -9,6 +9,8 @@ struct TodoEvent {
     var complete: Bool
 }
 
+extension TodoEvent: Identifiable {}
+
 extension TodoEvent: Migrator {
     static var table: Tablex { Tablex("events") }
     

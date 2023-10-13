@@ -16,6 +16,15 @@
 		A8B9E44C2AD671CB00039BBD /* Ditto in Frameworks */ = {isa = PBXBuildFile; productRef = A8B9E44B2AD671CB00039BBD /* Ditto */; };
 		A8B9E44F2AD6721800039BBD /* ConceptHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B9E44E2AD6721800039BBD /* ConceptHomeView.swift */; };
 		A8B9E4512AD6E67800039BBD /* TodoEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B9E4502AD6E67800039BBD /* TodoEvent.swift */; };
+		A8B9E4532AD7AEB700039BBD /* DependencyInjector.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B9E4522AD7AEB700039BBD /* DependencyInjector.swift */; };
+		A8B9E4552AD7AEC500039BBD /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B9E4542AD7AEC500039BBD /* AppState.swift */; };
+		A8B9E4572AD7AECA00039BBD /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B9E4562AD7AECA00039BBD /* Interactor.swift */; };
+		A8B9E4592AD7AF3900039BBD /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B9E4582AD7AF3900039BBD /* Repository.swift */; };
+		A8B9E45C2AD7AFFA00039BBD /* SQLiteDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B9E45B2AD7AFFA00039BBD /* SQLiteDao.swift */; };
+		A8B9E45E2AD7B00B00039BBD /* SQLiteEventDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B9E45D2AD7B00B00039BBD /* SQLiteEventDao.swift */; };
+		A8B9E4602AD7B23000039BBD /* Dao.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B9E45F2AD7B23000039BBD /* Dao.swift */; };
+		A8B9E4622AD7B2B800039BBD /* TodoEventInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B9E4612AD7B2B800039BBD /* TodoEventInteractor.swift */; };
+		A8B9E4692AD8E29400039BBD /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B9E4682AD8E29400039BBD /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +35,15 @@
 		A8B9E4352AD6712D00039BBD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A8B9E44E2AD6721800039BBD /* ConceptHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConceptHomeView.swift; sourceTree = "<group>"; };
 		A8B9E4502AD6E67800039BBD /* TodoEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoEvent.swift; sourceTree = "<group>"; };
+		A8B9E4522AD7AEB700039BBD /* DependencyInjector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyInjector.swift; sourceTree = "<group>"; };
+		A8B9E4542AD7AEC500039BBD /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		A8B9E4562AD7AECA00039BBD /* Interactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interactor.swift; sourceTree = "<group>"; };
+		A8B9E4582AD7AF3900039BBD /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		A8B9E45B2AD7AFFA00039BBD /* SQLiteDao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteDao.swift; sourceTree = "<group>"; };
+		A8B9E45D2AD7B00B00039BBD /* SQLiteEventDao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteEventDao.swift; sourceTree = "<group>"; };
+		A8B9E45F2AD7B23000039BBD /* Dao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dao.swift; sourceTree = "<group>"; };
+		A8B9E4612AD7B2B800039BBD /* TodoEventInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoEventInteractor.swift; sourceTree = "<group>"; };
+		A8B9E4682AD8E29400039BBD /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +101,7 @@
 				A8B9E44D2AD6720B00039BBD /* Concept */,
 				A8B9E42E2AD6712C00039BBD /* TodoListApp.swift */,
 				A8B9E4302AD6712C00039BBD /* ContentView.swift */,
+				A8B9E4682AD8E29400039BBD /* HomeView.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -96,6 +115,7 @@
 				A8B9E4402AD6715D00039BBD /* Interactor */,
 				A8B9E4412AD6716200039BBD /* Repository */,
 				A8B9E4432AD6716A00039BBD /* Util */,
+				A8B9E4652AD7C3CE00039BBD /* Extension */,
 			);
 			path = Internal;
 			sourceTree = "<group>";
@@ -103,6 +123,7 @@
 		A8B9E43E2AD6715700039BBD /* System */ = {
 			isa = PBXGroup;
 			children = (
+				A8B9E4522AD7AEB700039BBD /* DependencyInjector.swift */,
 			);
 			path = System;
 			sourceTree = "<group>";
@@ -118,6 +139,8 @@
 		A8B9E4402AD6715D00039BBD /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
+				A8B9E4562AD7AECA00039BBD /* Interactor.swift */,
+				A8B9E4612AD7B2B800039BBD /* TodoEventInteractor.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -125,6 +148,9 @@
 		A8B9E4412AD6716200039BBD /* Repository */ = {
 			isa = PBXGroup;
 			children = (
+				A8B9E4582AD7AF3900039BBD /* Repository.swift */,
+				A8B9E45F2AD7B23000039BBD /* Dao.swift */,
+				A8B9E45A2AD7AFEB00039BBD /* SQLite */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -132,6 +158,7 @@
 		A8B9E4422AD6716600039BBD /* AppState */ = {
 			isa = PBXGroup;
 			children = (
+				A8B9E4542AD7AEC500039BBD /* AppState.swift */,
 			);
 			path = AppState;
 			sourceTree = "<group>";
@@ -149,6 +176,22 @@
 				A8B9E44E2AD6721800039BBD /* ConceptHomeView.swift */,
 			);
 			path = Concept;
+			sourceTree = "<group>";
+		};
+		A8B9E45A2AD7AFEB00039BBD /* SQLite */ = {
+			isa = PBXGroup;
+			children = (
+				A8B9E45B2AD7AFFA00039BBD /* SQLiteDao.swift */,
+				A8B9E45D2AD7B00B00039BBD /* SQLiteEventDao.swift */,
+			);
+			path = SQLite;
+			sourceTree = "<group>";
+		};
+		A8B9E4652AD7C3CE00039BBD /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,8 +275,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				A8B9E4312AD6712C00039BBD /* ContentView.swift in Sources */,
+				A8B9E4532AD7AEB700039BBD /* DependencyInjector.swift in Sources */,
+				A8B9E4692AD8E29400039BBD /* HomeView.swift in Sources */,
+				A8B9E4602AD7B23000039BBD /* Dao.swift in Sources */,
+				A8B9E4622AD7B2B800039BBD /* TodoEventInteractor.swift in Sources */,
 				A8B9E42F2AD6712C00039BBD /* TodoListApp.swift in Sources */,
+				A8B9E4592AD7AF3900039BBD /* Repository.swift in Sources */,
+				A8B9E4552AD7AEC500039BBD /* AppState.swift in Sources */,
 				A8B9E4512AD6E67800039BBD /* TodoEvent.swift in Sources */,
+				A8B9E45C2AD7AFFA00039BBD /* SQLiteDao.swift in Sources */,
+				A8B9E45E2AD7B00B00039BBD /* SQLiteEventDao.swift in Sources */,
+				A8B9E4572AD7AECA00039BBD /* Interactor.swift in Sources */,
 				A8B9E44F2AD6721800039BBD /* ConceptHomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

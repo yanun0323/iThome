@@ -3,10 +3,9 @@ import Sworm
 
 struct Dao: SQLiteDao {
     init(isMock: Bool) {
-        let conn = SQL.setup(dbName: "database", isMock: isMock)
-        conn.migrate([Member.self])
+        let db = SQL.setup(dbName: "database", isMock: isMock)
+        db.migrate([TodoEvent.self])
     }
 }
 
 extension Dao: Repository {}
-
